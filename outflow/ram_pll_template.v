@@ -1,0 +1,29 @@
+
+// Efinity Top-level template
+// Version: 2018.4.285
+// Date: 2019-03-20 10:19
+
+// Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved.
+
+// This file may be used as a starting point for Efinity synthesis top-level target.
+// The port list here matches what is expected by Efinity constraint files generated
+// by the Efinity Interface Designer.
+
+// To use this:
+//     #1)  Save this file with a different name to a different directory, where source files are kept.
+//              Example: you may wish to save as F:\efinity_prj\T20\ram_pll_test\ram_pll.v
+//     #2)  Add the newly saved file into Efinity project as design file
+//     #3)  Edit the top level entity in Efinity project to:  ram_pll
+//     #4)  Insert design content.
+
+
+module ram_pll
+(
+  input locked,
+  input clk,
+  output [7:0] led_o
+);
+
+
+endmodule
+

@@ -1,0 +1,1 @@
+create_clock -period 26.67 clk

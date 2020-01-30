@@ -1,0 +1,148 @@
+Synthesis report for project ram_pll
+Date : Mar 20 2019  10:41:24
+Copyright (C) 2013 - 2018 Efinix Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+Top-level Entity Name : top
+### ### File List (begin) ### ### ###
+(verilog) F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v
+(verilog) F:/efinity_prj/T20/ram_pll_test/shift_reg.v
+(verilog) F:/efinity_prj/T20/ram_pll_test/simple_dual_port_ram.v
+(verilog) F:/efinity_prj/T20/ram_pll_test/single_port_rom.v
+(verilog) F:/efinity_prj/T20/ram_pll_test/top.v
+(verilog) F:/efinity_prj/T20/ram_pll_test/true_dual_port_ram.v
+### ### File List (end) ### ### ###
+
+### ### Pre-optimizations and mapping (begin) ### ### ###
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ F:/efinity_prj/T20/ram_pll_test/simple_dual_port_ram.v (31)"
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ F:/efinity_prj/T20/ram_pll_test/true_dual_port_ram.v (34)"
+HS : Hierarchical pre-synthesis module : "single_port_rom(DATA_WIDTH=8,ADDR_WIDTH=3,RAM_INIT_FILE="rom_init.mem")"
+@ "F:/efinity_prj/T20/ram_pll_test/single_port_rom.v (13)"
+	DATA_WIDTH = 8
+	ADDR_WIDTH = 3
+	OUTPUT_REG = "FALSE"
+	RAM_INIT_FILE = "rom_init.mem"
+HS : Hierarchical pre-synthesis module : "shift_reg(D_WIDTH=8,TAPE=1300)"
+@ "F:/efinity_prj/T20/ram_pll_test/shift_reg.v (1)"
+	D_WIDTH = 8
+	TAPE = 1300
+HS : Hierarchical pre-synthesis module : "simple_dual_port_ram"
+@ "F:/efinity_prj/T20/ram_pll_test/simple_dual_port_ram.v (14)"
+	DATA_WIDTH = 8
+	ADDR_WIDTH = 9
+	OUTPUT_REG = "TRUE"
+	RAM_INIT_FILE = ""
+HS : Hierarchical pre-synthesis module : "dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")"
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (163)"
+	DATA_WIDTH = 8
+	ADDR_WIDTH = 9
+	LATENCY = 1
+	FIFO_MODE = "STD_FIFO"
+	RAM_INIT_FILE = ""
+	COMPATIBILITY = "E"
+	OUTPUT_REG = "TRUE"
+	CHECK_FULL = "TRUE"
+	CHECK_EMPTY = "TRUE"
+HS : Hierarchical pre-synthesis module : "dual_clock_fifo_wrapper(ADDR_WIDTH=9)"
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (12)"
+	DATA_WIDTH = 8
+	ADDR_WIDTH = 9
+	LATENCY = 1
+	FIFO_MODE = "STD_FIFO"
+	RAM_INIT_FILE = ""
+	COMPATIBILITY = "E"
+	OUTPUT_REG = "TRUE"
+	CHECK_FULL = "TRUE"
+	CHECK_EMPTY = "TRUE"
+HS : Hierarchical pre-synthesis module : "true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIRST",WRITE_MODE_2="WRITE_FIRST",RAM_INIT_FILE="")"
+@ "F:/efinity_prj/T20/ram_pll_test/true_dual_port_ram.v (14)"
+	DATA_WIDTH = 8
+	ADDR_WIDTH = 16
+	WRITE_MODE_1 = "WRITE_FIRST"
+	WRITE_MODE_2 = "WRITE_FIRST"
+	OUTPUT_REG_1 = "FALSE"
+	OUTPUT_REG_2 = "FALSE"
+	RAM_INIT_FILE = ""
+HS : Hierarchical pre-synthesis module : "top"
+@ "F:/efinity_prj/T20/ram_pll_test/top.v (12)"
+	HALF_SEC = 37500000
+	ROM_DWIDTH = 8
+	ROM_AWIDTH = 3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i47
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_22/i9
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i9
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i22
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_47/i9
+@ "F:/efinity_prj/T20/ram_pll_test/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i9
+
+Mapping success.
+### ### Mapping (end) ### ### ###
+
+### ### Post-optimizations and re-synthesis (begin) ### ### ###
+
+Post-optimizations and re-synthesis success.
+### ### Post-optimizations and re-synthesis (end) ### ### ###
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 19
+Enable signal <vcc>, number of controlling flip flops: 10500
+Enable signal <n10870>, number of controlling flip flops: 3
+Enable signal <dual_clock_fifo_wrapper/o_full_2>, number of controlling flip flops: 18
+Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_we_1P>, number of controlling flip flops: 9
+Enable signal <n612>, number of controlling flip flops: 18
+Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_re_1P>, number of controlling flip flops: 10
+Enable signal <ram_raddr[15]>, number of controlling flip flops: 2
+Enable signal <n21470>, number of controlling flip flops: 1
+Enable signal <n21475>, number of controlling flip flops: 1
+Enable signal <n21485>, number of controlling flip flops: 1
+Enable signal <n21488>, number of controlling flip flops: 1
+Enable signal <n21491>, number of controlling flip flops: 1
+Enable signal <n21496>, number of controlling flip flops: 1
+Enable signal <n21513>, number of controlling flip flops: 1
+Enable signal <n21525>, number of controlling flip flops: 1
+Enable signal <n21536>, number of controlling flip flops: 1
+Enable signal <n21548>, number of controlling flip flops: 1
+Enable signal <n21556>, number of controlling flip flops: 1
+Enable signal <n21588>, number of controlling flip flops: 1
+### ### EFX FF CE enables (end) ### ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20F256
+project : ram_pll
+root : top
+I : F:/efinity_prj/T20/ram_pll_test
+output-dir : F:/efinity_prj/T20/ram_pll_test/outflow
+work-dir : F:/efinity_prj/T20/ram_pll_test/work_syn
+write-efx-verilog : F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.map.v
+binary-db : F:/efinity_prj/T20/ram_pll_test/ram_pll.vdb
+insert-ios : 0
+num_mult18 : -1
+num_ram_5k : -1
+syn_options : mode=speed
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	2
+OUTPUT PORTS    : 	8
+
+EFX_ADD         : 	63
+EFX_LUT4        : 	203
+EFX_FF          : 	10572
+EFX_RAM_5K      : 	130
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 15s
+Elapsed synthesis time : 29s

@@ -1,0 +1,1 @@
+C:/Efinity/2018.4/bin/efx_pgm --source F:/efinity_prj/T20/ram_pll_test/work_pnr/ram_pll.lbf --dest F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.hex --device T20F256 --family Trion --periph F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.lpf --oscillator_clock_divider DIV8 --spi_low_power_mode on --io_weak_pullup on --enable_roms on --mode active --width 1 --enable_crc_check on

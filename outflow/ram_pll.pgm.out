@@ -1,0 +1,17 @@
+
+Efinix FPGA Programmer.
+Version: 2018.4.285 
+Copyright (C) 2013 - 2018 Efinix Inc. All rights reserved.
+
+Compiled: Jan 27 2019.
+
+Using source file "F:/efinity_prj/T20/ram_pll_test/work_pnr/ram_pll.lbf"
+Generating HEX programming file for device "T20F256", family "Trion"
+Using periphery source file "F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.lpf"
+Finished generating "F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.hex"
+Efinity Programmer took 3.50415 seconds.
+	Efinity Programmer took 3.504 seconds (approximately) in total CPU time.
+Efinity Programmer virtual memory usage: begin = 2.884 MB, end = 5.036 MB, delta = 2.152 MB
+	Efinity Programmer peak virtual memory usage = 42.72 MB
+Efinity Programmer resident set memory usage: begin = 5.892 MB, end = 10.308 MB, delta = 4.416 MB
+	Efinity Programmer peak resident set memory usage = 44.26 MB

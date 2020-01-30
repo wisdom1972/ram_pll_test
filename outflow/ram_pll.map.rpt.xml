@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="T中国标准时间" project="ram_pll" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
+
+  <efx:group name="Mapped Resource">
+    <efx:group_data name="EFX_ADD" value="63"/>
+    <efx:group_data name="EFX_LUT4" value="203"/>
+    <efx:group_data name="EFX_FF" value="10572"/>
+    <efx:group_data name="EFX_RAM_5K" value="130"/>
+    <efx:group_data name="EFX_GBUFCE" value="1"/>
+  </efx:group>
+
+  <efx:group name="System Resource">
+    <efx:group_data info="runtime" name="synthesis" value="0|0:0:29"/>
+  </efx:group>
+
+</efx:tool_report>
