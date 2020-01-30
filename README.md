@@ -46,9 +46,11 @@ Other features :
 - STEP2: get ready of the T20F256EVB,  
     - if you have same EVB with Efinix engieers, with the other words, it is easy to find the issue with same two boards when you need tech support. 
 
-- STEP3: open the Efinity project with the ram_pll.xml
+- STEP3: download the total repository directory into Efinity project directory, for examples, C:\Efinity\2018.4\project\ram_pll_test
 
-- STEP4: download the FPGA design hex into FPGA, it is all set
+- STEP4: open the Efinity project with the ram_pll.xml
+
+- STEP5: download the FPGA design hex into FPGA, it is all set
 
 - you can study how to use the Efinity RAM and PLL when you want to transfer your previous project that based on other vendor FPGA
 
