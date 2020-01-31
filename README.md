@@ -39,6 +39,20 @@ Other features :
 
 - we use the Efinix T20F256 EVB
 
+- The Trion T20 BGA256 development board features:
+
+-- T20 FPGA  
+-- 8 user LEDs  
+-- 3 user pushbutton switches, 3 user DIP switches  
+-- Micro-USB port  
+-- SPI and JTAG headers to facilitate configuration  
+-- 3 I/O headers to connect to external devices  
+-- 50 and 74.25 MHz oscillators  
+-- LVDS TX, RX, and clock headers  
+-- 256 Mb SDR SDRAM
+
+![T20F256EVB](./T20F256EVB.jpg)
+
 
 ## Project name
 
