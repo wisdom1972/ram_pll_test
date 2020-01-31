@@ -72,6 +72,16 @@ Other features :
 
 - you can study how to use the Efinity RAM and PLL when you want to transfer your previous project that based on other vendor FPGA
 
+## Project Verilog file list
+
+-- clk_gen.v
+-- dual_clock_fifo.v  
+-- shift_reg.v  
+-- simple_dual_port_ram.v  
+-- single_port_rom.v  
+-- **top.v**  
+-- true_dual_port_ram.v
+
 
 ## Update
 
