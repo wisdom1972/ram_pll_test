@@ -3,6 +3,14 @@
 
  ## Description
 
+> 项目的目的：
+
+你可以通过这个项目， 来快速了解如何使用Efinix FPGA内部的RAM，包括FIFO,DPRAM，还有PLL的使用
+
+打开工程后， 可以看到PLL的设置情况。
+
+
+
 This repo focus on introduction Efinix Trion Series FPGA Block RAM and PLL
 - README.md  the project readme file
 - Efinix 的官网是 www.efinixinc.com
@@ -58,6 +66,7 @@ Other features :
 
 
 ## Project name
+
 
 - STEP1: install Efinity 2018.4 or other advanced version in Win or Ubuntu
 - STEP2: get ready of the T20F256EVB,  
