@@ -58,6 +58,11 @@ Other features :
 ## Update
 
  -Jan-31-2020,  migrate from 2018.2 to 2019.2 Efinity by Ben Chen
- 
-The code is from Ben Chen
+
+## Acknowledge
+
+The code is from Ben Chen  
+
 Project upload by Wisdom Zhang
+
+Anything question: email: 909614802 at qq dot com
