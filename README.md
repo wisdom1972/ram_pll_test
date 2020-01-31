@@ -53,6 +53,10 @@ Other features :
 
 ![T20F256EVB](./T20F256EVB.jpg)
 
+### T20F256EVB Product picture
+
+![T20F256EVB Product Picture](./T20F256EVB_PCB.jpg)
+
 
 ## Project name
 
