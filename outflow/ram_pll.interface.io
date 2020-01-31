@@ -1,9 +1,9 @@
 # Efinity IO Placement 
-# Interface File: F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.interface.csv
-# Version:        2018.4.285
-# Date:           Jan 27 2019
+# Interface File: F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv
+# Version:        2019.2.192
+# Date:           Aug 21 2019
 
-# Copyright (C) 2013 - 2018 Efinix Inc. All rights reserved.
+# Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
 
 
 # pin name	x	y	z

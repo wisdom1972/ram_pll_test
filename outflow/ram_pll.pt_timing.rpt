@@ -1,9 +1,9 @@
 
 Efinity Interface Designer Timing Report
-Version: 2018.4.285
-Date: 2019-03-20 10:19
+Version: 2019.2.192
+Date: 2020-01-31 10:03
 
-Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved.
+Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
 
 Device: T20F256
 Project: ram_pll
@@ -22,28 +22,20 @@ Timing Model: C3 (preliminary)
 
 ---------- 2. GPIO Timing Report (begin) ----------
 
-Clock Network Delay:
-=====================
-
-+-----------+----------+----------+
-| Clock Pin | Max (ns) | Min (ns) |
-+-----------+----------+----------+
-+-----------+----------+----------+
-
 Non-registered GPIO Configuration:
 ===================================
 
 +---------------+----------+-----------+----------+----------+
 | Instance Name | Pin Name | Parameter | Max (ns) | Min (ns) |
 +---------------+----------+-----------+----------+----------+
-|    led_o[0]   | led_o[0] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[1]   | led_o[1] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[2]   | led_o[2] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[3]   | led_o[3] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[4]   | led_o[4] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[5]   | led_o[5] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[6]   | led_o[6] |  GPIO_OUT |  4.977   |  1.914   |
-|    led_o[7]   | led_o[7] |  GPIO_OUT |  4.977   |  1.914   |
+|    led_o[0]   | led_o[0] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[1]   | led_o[1] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[2]   | led_o[2] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[3]   | led_o[3] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[4]   | led_o[4] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[5]   | led_o[5] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[6]   | led_o[6] |  GPIO_OUT |  4.978   |  1.915   |
+|    led_o[7]   | led_o[7] |  GPIO_OUT |  4.978   |  1.915   |
 +---------------+----------+-----------+----------+----------+
 
 ---------- GPIO Timing Report (end) ----------

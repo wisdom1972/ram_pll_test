@@ -2,21 +2,29 @@
 <efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="T中国标准时间" project="ram_pll" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
 
   <efx:group name="Core Resource">
-    <efx:group_data name="Logic Elements" value="54.53%"/>
-    <efx:group_data name="Memory Blocks" value="63.73%"/>
-    <efx:group_data name="Multipliers" value="0.00%"/>
+    <efx:group_data name="Inputs" severity="info" value="2 / 470"/>
+    <efx:group_data name="Outputs" severity="info" value="8 / 595"/>
+    <efx:group_data name="Clocks" severity="info" value="1 / 16"/>
+    <efx:group_data name="Logic Elements" severity="info" value="10757 / 19728"/>
+    <efx:group_data name="Memory Blocks" severity="info" value="130 / 204"/>
+    <efx:group_data name="Multipliers" severity="info" value="0 / 36"/>
   </efx:group>
 
   <efx:group name="System Resource">
-    <efx:group_data info="runtime" name="packing" value="0|0:0:2"/>
-    <efx:group_data info="runtime" name="placement" value="0|0:2:6"/>
-    <efx:group_data info="runtime" name="routing" value="0|0:0:5"/>
-    <efx:group_data info="peak_rr" name="Peak RSS" value="753.94 MB"/>
+    <efx:group_data info="runtime" name="packing" severity="info" value="0|0:0:2"/>
+    <efx:group_data info="runtime" name="placement" severity="info" value="0|0:1:50"/>
+    <efx:group_data info="runtime" name="routing" severity="info" value="0|0:0:14"/>
+    <efx:group_data info="peak_rr" name="Peak RSS" severity="info" value="772.948 MB"/>
+  </efx:group>
+
+  <efx:group name="Interface">
+    <efx:group_data name="Missing Interface Pins" severity="info" value="0"/>
+    <efx:group_data name="Unassigned Core Pins" severity="info" value="0"/>
   </efx:group>
 
   <efx:group name="Timing">
-    <efx:group_data name="Least Slack" value="13.21 ns"/>
-    <efx:group_data name="clk" value="74.294 MHz"/>
+    <efx:group_data name="Least Slack" severity="info" value="13.629 ns"/>
+    <efx:group_data name="clk" severity="info" value="76.682 MHz"/>
   </efx:group>
 
 </efx:tool_report>

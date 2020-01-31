@@ -1,17 +1,17 @@
 
 # Efinity Pinout Report
-# Version: 2018.4.285
-# Date: 2019-03-20 10:19
+# Version: 2019.2.192
+# Date: 2020-01-31 10:03
 
-# Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved.
+# Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
 
 # Device: T20F256
-# Package status: preliminary
+# Package status: final
 # Project: ram_pll
 # Configuration mode: active (x1)
 
 Pin Number,Pin Name,Signal Name,Direction,Bank,I/O Standard,Pull Type,Function
-R1,CONDONE,,Output,1A,3.3 V LVTTL / LVCMOS,,Configuration
+R1,CDONE,,Output,1A,3.3 V LVTTL / LVCMOS,,Configuration
 P1,CRESET_N,,Input,1A,3.3 V LVTTL / LVCMOS,,Configuration
 A1,GND,,Power,,,,Ground
 A5,GND,,Power,,,,Ground
@@ -98,7 +98,7 @@ N7,GPIOB_TXP09,,,4B,,,User IO
 T8,GPIOB_TXP10,,,4B,,,User IO
 M8,GPIOB_TXP11,,,4B,,,User IO
 R8,GPIOB_TXP12,,,4B,,,User IO
-P3,GPIOL_00_SS,,Input,1A,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
+P3,GPIOL_00_SS_N,,Input,1A,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
 M3,GPIOL_01_CCK,,Input,1A,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
 P2,GPIOL_02,,Input,1A,3.3 V LVTTL / LVCMOS,weak pull up,User IO
 N3,GPIOL_04_CSI,,Input,1A,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
@@ -238,7 +238,7 @@ N16,GPIOR_154,led_o[5],Output,3D_3E,3.3 V LVTTL / LVCMOS,,User IO
 P15,GPIOR_155,led_o[6],Output,3D_3E,3.3 V LVTTL / LVCMOS,,User IO
 M14,GPIOR_156,led_o[7],Output,3D_3E,3.3 V LVTTL / LVCMOS,,User IO
 L13,GPIOR_157_PLLIN,,Input,3D_3E,3.3 V LVTTL / LVCMOS,weak pull up,User IO/PLL_CLKIN
-L12,GPIOR_158_TESTN,,Input,3D_3E,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
+L12,GPIOR_158_TEST_N,,Input,3D_3E,3.3 V LVTTL / LVCMOS,weak pull up,User IO/Configuration
 R2,REF_RES,,Input,4B,,,
 M2,TCK,,Input,1A,3.3 V LVTTL / LVCMOS,,Configuration
 K5,TDI,,Input,1A,3.3 V LVTTL / LVCMOS,,Configuration

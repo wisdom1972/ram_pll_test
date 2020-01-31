@@ -1,9 +1,9 @@
 
 Efinix FPGA Placement and Routing.
-Version: 2018.4.285 
-Compiled: Jan 27 2019.
+Version: 2019.2.192 
+Compiled: Aug 21 2019.
 
-Copyright (C) 2013 - 2018 Efinix Inc. All rights reserved.
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
 
 
 The Tool Is Based on VPR of University of Toronto,
@@ -13,251 +13,236 @@ a free open source code under MIT license.
 Running Placement and Routing for Family "Trion", Device "T20F256" ...
 
 ***** Beginning stage netlist pre-processing ... *****
-Successfully Read in Verific binary Netlist dump file "F:/efinity_prj/T20/ram_pll_test/ram_pll.vdb".
+Successfully Read in Verific binary Netlist dump file "F:/efinity_prj/2019_2/ram_pll_test-master/ram_pll.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 8.4637 seconds.
-	VDB Netlist Checker took 8.464 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 66.116 MB, end = 66.124 MB, delta = 0.008 MB
-	VDB Netlist Checker peak virtual memory usage = 69.452 MB
-VDB Netlist Checker resident set memory usage: begin = 67.792 MB, end = 67.956 MB, delta = 0.164 MB
-	VDB Netlist Checker peak resident set memory usage = 70.82 MB
+VDB Netlist Checker took 8.01916 seconds.
+	VDB Netlist Checker took 8.019 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 66.72 MB, end = 66.728 MB, delta = 0.008 MB
+	VDB Netlist Checker peak virtual memory usage = 70.056 MB
+VDB Netlist Checker resident set memory usage: begin = 68.892 MB, end = 69.072 MB, delta = 0.18 MB
+	VDB Netlist Checker peak resident set memory usage = 71.92 MB
 ***** Ending VDB Netlist Checker ... *****
-Reading core interface constraints from 'F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.interface.csv'.
-Successfully processed interface constraints file "F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.interface.csv".
+Reading core interface constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv'.
+Successfully processed interface constraints file "F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv".
 Found 0 constant generator nets.
 Pass 0: Swept away 0 nets with no fanout.
 Pass 0: Swept away 0 blocks with no fanout.
 Swept away 0 nets and 0 blocks in total.
 Removed 0 LUT buffers.
-Successfully created VPR logical netlist from Verific binary DataBase file "F:/efinity_prj/T20/ram_pll_test/ram_pll.vdb".
-Netlist pre-processing took 9.6038 seconds.
-	Netlist pre-processing took 9.603 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 12.304 MB, end = 87.064 MB, delta = 74.76 MB
-	Netlist pre-processing peak virtual memory usage = 87.064 MB
-Netlist pre-processing resident set memory usage: begin = 15.676 MB, end = 88.152 MB, delta = 72.476 MB
-	Netlist pre-processing peak resident set memory usage = 88.156 MB
+Successfully created VPR logical netlist from Verific binary DataBase file "F:/efinity_prj/2019_2/ram_pll_test-master/ram_pll.vdb".
+Netlist pre-processing took 9.14125 seconds.
+	Netlist pre-processing took 9.142 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 12.86 MB, end = 87.608 MB, delta = 74.748 MB
+	Netlist pre-processing peak virtual memory usage = 87.608 MB
+Netlist pre-processing resident set memory usage: begin = 16.792 MB, end = 89.212 MB, delta = 72.42 MB
+	Netlist pre-processing peak resident set memory usage = 89.216 MB
 ***** Ending stage netlist pre-processing *****
 ***** Beginning stage packing ... *****
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
-SetupClusteredData num_clusters=10898
-Generate proto netlist for file "F:/efinity_prj/T20/ram_pll_test/work_pnr\ram_pll.net_proto" took 0.029 seconds
-Creating IO constraints file 'F:/efinity_prj/T20/ram_pll_test/work_pnr\ram_pll.io_place'
-Packing took 2.27134 seconds.
-	Packing took 2.271 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 35.184 MB, end = 48.964 MB, delta = 13.78 MB
-	Packing peak virtual memory usage = 258.768 MB
-Packing resident set memory usage: begin = 36.376 MB, end = 49.584 MB, delta = 13.208 MB
-	Packing peak resident set memory usage = 256.32 MB
+Generate proto netlist for file "F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto" took 0.024 seconds
+Creating IO constraints file 'F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.io_place'
+Packing took 2.2438 seconds.
+	Packing took 2.243 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 33.636 MB, end = 47.76 MB, delta = 14.124 MB
+	Packing peak virtual memory usage = 260.232 MB
+Packing resident set memory usage: begin = 36.724 MB, end = 50.292 MB, delta = 13.568 MB
+	Packing peak resident set memory usage = 258.48 MB
 ***** Ending stage packing *****
 ***** Beginning stage packed netlist loading ... *****
-Read proto netlist file F:/efinity_prj/T20/ram_pll_test/work_pnr\ram_pll.net_proto
-Read proto netlist for file "F:/efinity_prj/T20/ram_pll_test/work_pnr\ram_pll.net_proto" took 0.006 seconds
-Setup net and block data structure took 0.442 seconds
-Packed netlist loading took 0.474291 seconds.
-	Packed netlist loading took 0.474 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 46.756 MB, end = 202.108 MB, delta = 155.352 MB
-	Packed netlist loading peak virtual memory usage = 258.768 MB
-Packed netlist loading resident set memory usage: begin = 47.336 MB, end = 194.796 MB, delta = 147.46 MB
-	Packed netlist loading peak resident set memory usage = 256.32 MB
+Read proto netlist file F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto
+Read proto netlist for file "F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto" took 0.004 seconds
+Setup net and block data structure took 0.451 seconds
+Packed netlist loading took 0.482449 seconds.
+	Packed netlist loading took 0.481 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 45.832 MB, end = 202.4 MB, delta = 156.568 MB
+	Packed netlist loading peak virtual memory usage = 260.232 MB
+Packed netlist loading resident set memory usage: begin = 48.268 MB, end = 195.704 MB, delta = 147.436 MB
+	Packed netlist loading peak resident set memory usage = 258.48 MB
 ***** Ending stage packed netlist loading *****
 ***** Beginning stage pre-placement ... *****
 
-FPGA Resource Usage...
-	Netlist      0	blocks of type: <EMPTY>
-	Netlist      10	blocks of type: io
-	Netlist      0	blocks of type: eftio
-	Netlist      1	blocks of type: gbuf_block
-	Netlist      0	blocks of type: gbuf_ctrl_block
-	Netlist      185	blocks of type: efl
-	Netlist      10572	blocks of type: eft
-	Netlist      130	blocks of type: memory
-	Netlist      0	blocks of type: mult
-
 ***** Ending stage pre-placement *****
 
-SDC file 'F:/efinity_prj/T20/ram_pll_test/top.sdc' parsed successfully.
+SDC file 'F:/efinity_prj/2019_2/ram_pll_test-master/top.sdc' parsed successfully.
 1 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
 
 ***** Beginning stage initial placement ... *****
-Reading core interface constraints from 'F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.interface.csv'.
-Successfully processed interface constraints file "F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.interface.csv".
-Writing IO placement constraints to 'F:/efinity_prj/T20/ram_pll_test/outflow\ram_pll.interface.io'.
+Reading core interface constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv'.
+Successfully processed interface constraints file "F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv".
+Writing IO placement constraints to 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow\ram_pll.interface.io'.
 
-Reading placement constraints from 'F:/efinity_prj/T20/ram_pll_test/outflow\ram_pll.interface.io'.
+Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow\ram_pll.interface.io'.
 
-Reading placement constraints from 'F:/efinity_prj/T20/ram_pll_test/work_pnr\ram_pll.io_place'.
+Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.io_place'.
 The driver, locked, of control net, locked, should be placed at a dedicated control pad location.
 ***** Ending stage initial placement *****
 ***** Beginning stage placement ... *****
-Timer::BuildGraph: ============ Cutting edge BACK edge from LUT__32609:I[0] to LUT__32664:O
-Placing core ... done
-Legalizing ... done
+memory map at hier_level memory(0)/mem_blk(0)
+mult map at hier_level mult(0)/mult_blk(0)
+Timer::BuildGraph: ============ Cutting edge BACK edge from LUT__32612:I[0] to LUT__32664:O
+Placing core ...
+HPWL after global placement: 88345
+Legalizing ... 
+HPWL after legalize: 88080
 Starting annealer
 
  ----------     -------  --------------     -------
   Iteration     BB Cost  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0      259635           13131        30.0
-          1      717035           10205        30.0
-          2      912884           10937        30.0
-          3      962154           11198        30.0
-          4      989756           10575        30.0
-          5      975544            9553        30.0
-          6      973418           10322        30.0
-          7      962361            9842        30.0
-          8      941100           10128        30.0
-          9      916239            9288        30.0
-         10      903654            8984        30.0
-         11      890796            8688        30.0
-         12      869501            8717        30.0
-         13      845673            8241        30.0
-         14      824387            8917        30.0
-         15      802158            9056        30.0
-         16      785057            8131        30.0
-         17      758781            8131        30.0
-         18      742144            8341        30.0
-         19      725256            8159        30.0
-         20      702572            7885        30.0
-         21      684098            7717        30.0
-         22      662629            7860        30.0
-         23      643370            7717        30.0
-         24      630107            7717        30.0
-         25      612069            7769        30.0
-         26      595682            7769        30.0
-         27      579340            7717        30.0
-         28      563024            7717        30.0
-         29      548432            7846        30.0
-         30      534817            7572        30.0
-         31      525720            7572        30.0
-         32      509548            7527        30.0
-         33      493107            7591        30.0
-         34      484852            7604        30.0
-         35      470381            7378        30.0
-         36      459095            7378        30.0
-         37      449737            7378        30.0
-         38      439055            7512        30.0
-         39      426159            7528        30.0
-         40      415307            7114        30.0
-         41      408229            7117        30.0
-         42      398509            7290        30.0
-         43      390939            7270        30.0
-         44      380690            7386        30.0
-         45      372573            7458        30.0
-         46      366045            7270        30.0
-         47      358019            7270        30.0
-         48      351547            7222        30.0
-         49      345015            7330        30.0
-         50      339857            7244        29.9
-         51      333732            7244        29.5
-         52      328471            7188        29.0
-         53      324769            7210        28.5
-         54      319705            7294        27.8
-         55      314168            7198        27.0
-         56      309400            7068        26.2
-         57      304408            7290        25.4
-         58      300673            7330        24.5
-         59      296308            7060        23.6
-         60      292221            7351        22.6
-         61      288039            7113        21.7
-         62      284961            7334        20.7
-         63      280938            7117        19.8
-         64      277470            7238        18.9
-         65      274643            7647        18.1
-         66      271475            7487        17.3
-         67      268189            7717        16.5
-         68      265360            7717        15.7
-         69      262492            7571        14.9
-         70      260438            7318        14.3
-         71      258494            7303        13.6
-         72      256253            7330        12.9
-         73      254516            7025        12.4
-         74      252468            7161        11.8
-         75      250550            7161        11.2
-         76      249082            7161        10.8
-         77      246905            7318        10.3
-         78      245470            7048         9.8
-         79      243738            7313         9.3
-         80      241567            7608         9.0
-         81      240389            7330         8.6
-         82      239191            7528         8.2
-         83      237789            7528         7.9
-         84      236712            7591         7.5
-         85      235687            7322         7.2
-         86      234671            7334         6.9
-         87      233820            7039         6.7
-         88      232322            7282         6.4
-         89      231953            7330         6.2
-         90      231064            7318         5.9
-         91      229741            7608         5.7
-         92      228861            7334         5.4
-         93      227933            7397         5.3
-         94      227214            7282         5.2
-         95      226494            7330         5.1
-         96      226545            7160         5.0
-         97      225243            7591         4.8
-         98      224607            7322         4.7
-         99      224111            7608         4.5
-        100      223495            7334         4.4
-        101      222915            7322         4.2
-        102      222383            7322         4.1
-        103      221933            7433         4.0
-        104      221234            7511         3.9
-        105      220801            7282         3.7
-        106      220306            7591         3.6
-        107      219896            7608         3.5
-        108      219518            7334         3.5
-        109      219257            7322         3.5
-        110      218977            7591         3.4
-        111      218755            7330         3.4
-        112      218561            7608         3.4
-        113      218285            7487         3.4
-        114      218146            7282         3.3
-        115      217958            7322         3.3
-        116      217847            7322         3.3
-        117      217680            7322         3.2
-        118      217532            7591         3.2
-        119      217348            7528         3.1
-        120      217218            7512         3.1
-        121      217101            7512         3.0
-        122      216646            7608         3.0
-        123      216435            7882         2.9
-        124      216266            7877         2.8
-        125      216135            7615         2.8
-        126      216062            7556         2.7
-        127      215969            7595         2.7
-        128      215851            7865         2.6
-        129      215728            7705         2.5
-        130      215713            7595         2.5
-        131      215519            7608         2.5
-        132      215407            7608         2.5
-        133      215241            7604         2.4
-        134      215159            7604         2.4
-        135      214997            7591         2.4
-        136      214966            7591         2.4
-        137      214838            7595         2.4
-        138      214726            7595         2.3
-        139      214610            7588         2.3
-        140      214535            7555         2.3
-        141      214441            7608         2.3
-        142      214403            7877         2.2
-        143      214306            7802         2.2
-        144      214241            7595         2.2
-        145      214199            7556         2.1
-        146      214164            7865         1.9
+          0       37599           12788        30.0
+          1      136302           13170        30.0
+          2      497125           13170        30.0
+          3      788394           12568        30.0
+          4      910376           12568        30.0
+          5      976092           10092        30.0
+          6      994980            9843        30.0
+          7      971988            9557        30.0
+          8      930835            8768        30.0
+          9      865246            8926        30.0
+         10      797263            8568        30.0
+         11      755121            8372        30.0
+         12      720074            8140        30.0
+         13      677533            7893        30.0
+         14      640844            7334        30.0
+         15      607440            7846        30.0
+         16      572475            7532        30.0
+         17      538564            7771        30.0
+         18      513964            7771        30.0
+         19      498897            7532        30.0
+         20      482918            7449        30.0
+         21      461457            7807        30.0
+         22      439834            7285        30.0
+         23      425722            7532        30.0
+         24      418815            7218        30.0
+         25      413369            7497        30.0
+         26      408152            7497        30.0
+         27      395644            7532        30.0
+         28      382534            7621        30.0
+         29      376496            7890        30.0
+         30      373352            7890        30.0
+         31      374027            7657        30.0
+         32      370813            7106        30.0
+         33      369949            7182        30.0
+         34      365588            7096        30.0
+         35      357166            7096        30.0
+         36      347996            7094        30.0
+         37      341755            7037        30.0
+         38      338880            7037        30.0
+         39      334686            7037        30.0
+         40      326544            6968        30.0
+         41      318783            6968        30.0
+         42      315440            6915        30.0
+         43      311354            6915        30.0
+         44      306165            6915        30.0
+         45      301724            6915        30.0
+         46      294729            6915        30.0
+         47      287804            7094        30.0
+         48      282675            7094        30.0
+         49      278455            6879        30.0
+         50      273073            6879        30.0
+         51      268908            6879        30.0
+         52      266608            6868        30.0
+         53      259859            6760        30.0
+         54      252902            6760        30.0
+         55      247690            6760        30.0
+         56      244434            6760        30.0
+         57      239174            7037        30.0
+         58      230113            7037        30.0
+         59      223924            7037        30.0
+         60      220180            6820        30.0
+         61      215652            6879        30.0
+         62      208515            6879        30.0
+         63      202143            6896        30.0
+         64      195682            7181        30.0
+         65      191663            6643        30.0
+         66      186822            6622        30.0
+         67      180604            6613        30.0
+         68      176397            6613        30.0
+         69      171324            6613        30.0
+         70      165647            6613        30.0
+         71      160119            6613        30.0
+         72      155221            6598        30.0
+         73      150915            6417        30.0
+         74      146376            6642        30.0
+         75      141404            7057        30.0
+         76      136069            7057        30.0
+         77      131899            6598        30.0
+         78      128354            6598        30.0
+         79      124084            6863        30.0
+         80      120785            6863        30.0
+         81      116143            6429        30.0
+         82      112304            6679        30.0
+         83      108924            6658        30.0
+         84      104939            6658        30.0
+         85      100714            6739        30.0
+         86       97982            6593        30.0
+         87       95099            6635        30.0
+         88       91528            6635        30.0
+         89       88469            6510        30.0
+         90       85664            6473        30.0
+         91       83588            6473        30.0
+         92       81729            6712        30.0
+         93       79793            6606        30.0
+         94       77046            6473        30.0
+         95       74907            6598        30.0
+         96       73657            6642        30.0
+         97       70795            6592        30.0
+         98       68827            6585        30.0
+         99       67358            6592        29.9
+        100       66398            6592        29.6
+        101       64327            6548        29.2
+        102       61940            6548        28.8
+        103       60654            6585        28.3
+        104       59838            6585        27.6
+        105       58176            6367        26.9
+        106       57205            6583        26.1
+        107       56352            6367        25.3
+        108       55238            6367        24.6
+        109       53767            6423        23.7
+        110       52797            6423        22.9
+        111       51667            6423        22.1
+        112       50732            6423        21.3
+        113       49858            6548        20.6
+        114       49400            6636        19.8
+        115       49110            6905        18.9
+        116       48005            6548        18.2
+        117       47438            6585        17.5
+        118       46313            6585        16.9
+        119       45153            6609        16.1
+        120       45062            6571        15.4
+        121       44533            6867        14.9
+        122       43698            6585        14.3
+        123       43345            6585        13.7
+        124       42883            6585        13.1
+        125       42187            6548        12.7
+        126       41907            6548        12.1
+        127       41183            6585        11.6
+        128       40313            6585        11.1
+        129       40012            6548        10.6
+        130       39919            6548        10.2
+        131       39223            6585         9.7
+        132       38951            6585         9.3
+        133       38640            6548         8.9
+        134       38501            6548         8.6
+        135       38488            6585         8.2
+        136       38103            6585         7.9
+        137       37675            6548         7.5
+        138       37202            6548         6.9
+HPWL after detailed placement: 100634
 Placement successful: 10887 cells are placed
 
-Reading placement constraints from 'F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.qplace'.
-Finish Realign Types (22 blocks need type change)
+Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.qplace'.
+Finish Realign Types (42 blocks need type change)
 
 Completed placement consistency check successfully.
 
-Placement estimated critical path delay: 7.42411 ns
-Successfully created FPGA place file 'F:/efinity_prj/T20/ram_pll_test/outflow/ram_pll.place'
-Placement took 126.204 seconds.
-	Placement took 126.203 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 204.188 MB, end = 330.576 MB, delta = 126.388 MB
-	Placement peak virtual memory usage = 520.416 MB
-Placement resident set memory usage: begin = 197.188 MB, end = 318.02 MB, delta = 120.832 MB
-	Placement peak resident set memory usage = 508.22 MB
+Placement estimated critical path delay: 6.68986 ns
+Successfully created FPGA place file 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.place'
+Placement took 110.497 seconds.
+	Placement took 110.496 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 204.104 MB, end = 279.744 MB, delta = 75.64 MB
+	Placement peak virtual memory usage = 520.156 MB
+Placement resident set memory usage: begin = 197.84 MB, end = 275.356 MB, delta = 77.516 MB
+	Placement peak resident set memory usage = 512.328 MB
 ***** Ending stage placement *****

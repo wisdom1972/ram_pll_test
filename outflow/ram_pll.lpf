@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <efxpt:periphery design="ram_pll" device="T20F256" xmlns:efxpt="http://www.efinixinc.com/peri_device_db" xmlns:efxutil="http://www.efinixinc.com/peri_tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_device_db lpf.xsd">
   <!-- Efinity Logical Peripheral File -->
-  <!-- Version: 2018.4.285 -->
-  <!-- Date: 2019-03-20 10:19 -->
-  <!-- Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved. -->
+  <!-- Version: 2019.2.192 -->
+  <!-- Date: 2020-01-31 10:03 -->
+  <!-- Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved. -->
   <efxpt:sequence size="198">
     <efxpt:instance id="GPIOL_00" index="0" type="gpio"/>
     <efxpt:instance id="GPIOL_01" index="1" type="gpio"/>
@@ -464,14 +464,14 @@
     <efxpt:parameter bitsize="2" name="PCR_OUT2_SEL">
       <efxpt:value name="BYPASS" setting="00"/>
       <efxpt:value name="CLK_OUTPUT" setting="11"/>
-      <efxpt:value name="INVERT_REGISTER" setting="01"/>
-      <efxpt:value name="REGISTER" setting="10"/>
+      <efxpt:value name="INVERT_REGISTER" setting="10"/>
+      <efxpt:value name="REGISTER" setting="01"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OUT1_SEL">
       <efxpt:value name="BYPASS" setting="00"/>
       <efxpt:value name="CLK_OUTPUT" setting="11"/>
-      <efxpt:value name="INVERT_REGISTER" setting="01"/>
-      <efxpt:value name="REGISTER" setting="10"/>
+      <efxpt:value name="INVERT_REGISTER" setting="10"/>
+      <efxpt:value name="REGISTER" setting="01"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_IN2_SEL">
       <efxpt:value name="BYPASS" setting="1"/>
@@ -482,14 +482,14 @@
       <efxpt:value name="REGISTER" setting="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OE2_SEL">
-      <efxpt:value name="BYPASS" setting="01"/>
-      <efxpt:value name="DISABLE" setting="10"/>
+      <efxpt:value name="BYPASS" setting="10"/>
+      <efxpt:value name="DISABLE" setting="01"/>
       <efxpt:value name="ENABLE" setting="11"/>
       <efxpt:value name="REGISTER" setting="00"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OE1_SEL">
-      <efxpt:value name="BYPASS" setting="01"/>
-      <efxpt:value name="DISABLE" setting="10"/>
+      <efxpt:value name="BYPASS" setting="10"/>
+      <efxpt:value name="DISABLE" setting="01"/>
       <efxpt:value name="ENABLE" setting="11"/>
       <efxpt:value name="REGISTER" setting="00"/>
     </efxpt:parameter>
@@ -568,14 +568,14 @@
     <efxpt:parameter bitsize="2" name="PCR_OUT2_SEL">
       <efxpt:value name="BYPASS" setting="00"/>
       <efxpt:value name="CLK_OUTPUT" setting="11"/>
-      <efxpt:value name="INVERT_REGISTER" setting="01"/>
-      <efxpt:value name="REGISTER" setting="10"/>
+      <efxpt:value name="INVERT_REGISTER" setting="10"/>
+      <efxpt:value name="REGISTER" setting="01"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OUT1_SEL">
       <efxpt:value name="BYPASS" setting="00"/>
       <efxpt:value name="CLK_OUTPUT" setting="11"/>
-      <efxpt:value name="INVERT_REGISTER" setting="01"/>
-      <efxpt:value name="REGISTER" setting="10"/>
+      <efxpt:value name="INVERT_REGISTER" setting="10"/>
+      <efxpt:value name="REGISTER" setting="01"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_IN2_SEL">
       <efxpt:value name="BYPASS" setting="1"/>
@@ -586,14 +586,14 @@
       <efxpt:value name="REGISTER" setting="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OE2_SEL">
-      <efxpt:value name="BYPASS" setting="01"/>
-      <efxpt:value name="DISABLE" setting="10"/>
+      <efxpt:value name="BYPASS" setting="10"/>
+      <efxpt:value name="DISABLE" setting="01"/>
       <efxpt:value name="ENABLE" setting="11"/>
       <efxpt:value name="REGISTER" setting="00"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="2" name="PCR_OE1_SEL">
-      <efxpt:value name="BYPASS" setting="01"/>
-      <efxpt:value name="DISABLE" setting="10"/>
+      <efxpt:value name="BYPASS" setting="10"/>
+      <efxpt:value name="DISABLE" setting="01"/>
       <efxpt:value name="ENABLE" setting="11"/>
       <efxpt:value name="REGISTER" setting="00"/>
     </efxpt:parameter>
@@ -647,38 +647,118 @@
       <efxpt:value name="ENABLE" setting="1"/>
     </efxpt:parameter>
   </efxpt:block_def>
-  <efxpt:block_def bitsize="798" name="mipi_rx" paramsize="27">
+  <efxpt:block_def bitsize="798" name="mipi_rx" paramsize="32">
     <efxpt:sequence>
-      <efxpt:parameter index="0" name="PCR_XCFGI1"/>
-      <efxpt:parameter index="1" name="PCR_POLARITY_HSYNC"/>
-      <efxpt:parameter index="2" name="PCR_POLARITY_VSYNC"/>
-      <efxpt:parameter index="3" name="PCR_HS_RX_TIMEOUT_CNT"/>
-      <efxpt:parameter index="4" name="PCR_DEBUG_EN_W"/>
-      <efxpt:parameter index="5" name="PCR_MP_TEST_EN"/>
-      <efxpt:parameter index="6" name="PCR_MP_TEST_MODE_SEL"/>
-      <efxpt:parameter index="7" name="PCR_PWRUP_MODE"/>
-      <efxpt:parameter index="8" name="PCR_USRCTRL_RST"/>
-      <efxpt:parameter index="9" name="PCR_PWRDN_N"/>
-      <efxpt:parameter index="10" name="PCR_PRECOUNTER_IN_LAN3"/>
-      <efxpt:parameter index="11" name="PCR_PRECOUNTER_IN_LAN2"/>
-      <efxpt:parameter index="12" name="PCR_PRECOUNTER_IN_LAN1"/>
-      <efxpt:parameter index="13" name="PCR_PRECOUNTER_IN_LAN0"/>
-      <efxpt:parameter index="14" name="PCR_PRECOUNTER_IN_CLK"/>
-      <efxpt:parameter index="15" name="PCR_LANE_SWAP_LAN3"/>
-      <efxpt:parameter index="16" name="PCR_LANE_SWAP_LAN2"/>
-      <efxpt:parameter index="17" name="PCR_LANE_SWAP_LAN1"/>
-      <efxpt:parameter index="18" name="PCR_LANE_SWAP_LAN0"/>
-      <efxpt:parameter index="19" name="PCR_DPDN_SWAP_CLK"/>
-      <efxpt:parameter index="20" name="PCR_DPDN_SWAP_LAN3"/>
-      <efxpt:parameter index="21" name="PCR_DPDN_SWAP_LAN2"/>
-      <efxpt:parameter index="22" name="PCR_DPDN_SWAP_LAN1"/>
-      <efxpt:parameter index="23" name="PCR_DPDN_SWAP_LAN0"/>
+      <efxpt:parameter index="0" name="PCR_XCFGI1_RESERVED_0"/>
+      <efxpt:parameter index="1" name="PCR_XCFGI_STOP11_LAN0"/>
+      <efxpt:parameter index="2" name="PCR_XCFGI_STOP11_LAN1"/>
+      <efxpt:parameter index="3" name="PCR_XCFGI_STOP11_LAN2"/>
+      <efxpt:parameter index="4" name="PCR_XCFGI_STOP11_LAN3"/>
+      <efxpt:parameter index="5" name="PCR_XCFGI1_RESERVED_1"/>
+      <efxpt:parameter index="6" name="PCR_POLARITY_HSYNC"/>
+      <efxpt:parameter index="7" name="PCR_POLARITY_VSYNC"/>
+      <efxpt:parameter index="8" name="PCR_HS_RX_TIMEOUT_CNT"/>
+      <efxpt:parameter index="9" name="PCR_DEBUG_EN_W"/>
+      <efxpt:parameter index="10" name="PCR_MP_TEST_EN"/>
+      <efxpt:parameter index="11" name="PCR_MP_TEST_MODE_SEL"/>
+      <efxpt:parameter index="12" name="PCR_PWRUP_MODE"/>
+      <efxpt:parameter index="13" name="PCR_USRCTRL_RST"/>
+      <efxpt:parameter index="14" name="PCR_PWRDN_N"/>
+      <efxpt:parameter index="15" name="PCR_PRECOUNTER_IN_LAN3"/>
+      <efxpt:parameter index="16" name="PCR_PRECOUNTER_IN_LAN2"/>
+      <efxpt:parameter index="17" name="PCR_PRECOUNTER_IN_LAN1"/>
+      <efxpt:parameter index="18" name="PCR_PRECOUNTER_IN_LAN0"/>
+      <efxpt:parameter index="19" name="PCR_PRECOUNTER_IN_CLK"/>
+      <efxpt:parameter index="20" name="PCR_LANE_SWAP_LAN3"/>
+      <efxpt:parameter index="21" name="PCR_LANE_SWAP_LAN2"/>
+      <efxpt:parameter index="22" name="PCR_LANE_SWAP_LAN1"/>
+      <efxpt:parameter index="23" name="PCR_LANE_SWAP_LAN0"/>
       <efxpt:parameter index="24" name="PCR_LANE_SWAP_CLK"/>
-      <efxpt:parameter index="25" name="PCR_DEBUG_MODE_SEL"/>
-      <efxpt:parameter index="26" name="PCR_XCFGI0"/>
+      <efxpt:parameter index="25" name="PCR_DPDN_SWAP_LAN3"/>
+      <efxpt:parameter index="26" name="PCR_DPDN_SWAP_LAN2"/>
+      <efxpt:parameter index="27" name="PCR_DPDN_SWAP_LAN1"/>
+      <efxpt:parameter index="28" name="PCR_DPDN_SWAP_LAN0"/>
+      <efxpt:parameter index="29" name="PCR_DPDN_SWAP_CLK"/>
+      <efxpt:parameter index="30" name="PCR_DEBUG_MODE_SEL"/>
+      <efxpt:parameter index="31" name="PCR_XCFGI0"/>
     </efxpt:sequence>
-    <efxpt:parameter bitsize="370" name="PCR_XCFGI1">
-      <efxpt:value name="FIXED" setting="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000"/>
+    <efxpt:parameter bitsize="346" name="PCR_XCFGI1_RESERVED_0">
+      <efxpt:value name="FIXED" setting="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_STOP11_LAN0">
+      <efxpt:value name="10" setting="0010"/>
+      <efxpt:value name="11" setting="0011"/>
+      <efxpt:value name="12" setting="0100"/>
+      <efxpt:value name="13" setting="0101"/>
+      <efxpt:value name="14" setting="0000"/>
+      <efxpt:value name="15" setting="0110"/>
+      <efxpt:value name="16" setting="0111"/>
+      <efxpt:value name="17" setting="1000"/>
+      <efxpt:value name="18" setting="1001"/>
+      <efxpt:value name="19" setting="1010"/>
+      <efxpt:value name="20" setting="1011"/>
+      <efxpt:value name="21" setting="1100"/>
+      <efxpt:value name="22" setting="1101"/>
+      <efxpt:value name="23" setting="1110"/>
+      <efxpt:value name="24" setting="1111"/>
+      <efxpt:value name="9" setting="0001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_STOP11_LAN1">
+      <efxpt:value name="10" setting="0010"/>
+      <efxpt:value name="11" setting="0011"/>
+      <efxpt:value name="12" setting="0100"/>
+      <efxpt:value name="13" setting="0101"/>
+      <efxpt:value name="14" setting="0000"/>
+      <efxpt:value name="15" setting="0110"/>
+      <efxpt:value name="16" setting="0111"/>
+      <efxpt:value name="17" setting="1000"/>
+      <efxpt:value name="18" setting="1001"/>
+      <efxpt:value name="19" setting="1010"/>
+      <efxpt:value name="20" setting="1011"/>
+      <efxpt:value name="21" setting="1100"/>
+      <efxpt:value name="22" setting="1101"/>
+      <efxpt:value name="23" setting="1110"/>
+      <efxpt:value name="24" setting="1111"/>
+      <efxpt:value name="9" setting="0001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_STOP11_LAN2">
+      <efxpt:value name="10" setting="0010"/>
+      <efxpt:value name="11" setting="0011"/>
+      <efxpt:value name="12" setting="0100"/>
+      <efxpt:value name="13" setting="0101"/>
+      <efxpt:value name="14" setting="0000"/>
+      <efxpt:value name="15" setting="0110"/>
+      <efxpt:value name="16" setting="0111"/>
+      <efxpt:value name="17" setting="1000"/>
+      <efxpt:value name="18" setting="1001"/>
+      <efxpt:value name="19" setting="1010"/>
+      <efxpt:value name="20" setting="1011"/>
+      <efxpt:value name="21" setting="1100"/>
+      <efxpt:value name="22" setting="1101"/>
+      <efxpt:value name="23" setting="1110"/>
+      <efxpt:value name="24" setting="1111"/>
+      <efxpt:value name="9" setting="0001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_STOP11_LAN3">
+      <efxpt:value name="10" setting="0010"/>
+      <efxpt:value name="11" setting="0011"/>
+      <efxpt:value name="12" setting="0100"/>
+      <efxpt:value name="13" setting="0101"/>
+      <efxpt:value name="14" setting="0000"/>
+      <efxpt:value name="15" setting="0110"/>
+      <efxpt:value name="16" setting="0111"/>
+      <efxpt:value name="17" setting="1000"/>
+      <efxpt:value name="18" setting="1001"/>
+      <efxpt:value name="19" setting="1010"/>
+      <efxpt:value name="20" setting="1011"/>
+      <efxpt:value name="21" setting="1100"/>
+      <efxpt:value name="22" setting="1101"/>
+      <efxpt:value name="23" setting="1110"/>
+      <efxpt:value name="24" setting="1111"/>
+      <efxpt:value name="9" setting="0001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="8" name="PCR_XCFGI1_RESERVED_1">
+      <efxpt:value name="FIXED" setting="00000000"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_POLARITY_HSYNC">
       <efxpt:value name="HIGH" setting="0"/>
@@ -702,7 +782,7 @@
       <efxpt:value name="FIXED" setting="00000"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_PWRUP_MODE">
-      <efxpt:value name="FIXED" setting="0"/>
+      <efxpt:value name="FIXED" setting="1"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_USRCTRL_RST">
       <efxpt:value name="DISABLE" setting="0"/>
@@ -713,74 +793,74 @@
       <efxpt:value name="ENABLE" setting="1"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="8" name="PCR_PRECOUNTER_IN_LAN3">
-      <efxpt:value name="FIXED" setting="00000111"/>
+      <efxpt:int_value endianness="big" max="255" min="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="8" name="PCR_PRECOUNTER_IN_LAN2">
-      <efxpt:value name="FIXED" setting="00000111"/>
+      <efxpt:int_value endianness="big" max="255" min="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="8" name="PCR_PRECOUNTER_IN_LAN1">
-      <efxpt:value name="FIXED" setting="00000111"/>
+      <efxpt:int_value endianness="big" max="255" min="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="8" name="PCR_PRECOUNTER_IN_LAN0">
-      <efxpt:value name="FIXED" setting="00000111"/>
+      <efxpt:int_value endianness="big" max="255" min="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="8" name="PCR_PRECOUNTER_IN_CLK">
-      <efxpt:value name="FIXED" setting="00001000"/>
+      <efxpt:int_value endianness="big" max="255" min="0"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_LANE_SWAP_LAN3">
-      <efxpt:value name="RXDP_N0" setting="000"/>
-      <efxpt:value name="RXDP_N1" setting="001"/>
-      <efxpt:value name="RXDP_N2" setting="010"/>
-      <efxpt:value name="RXDP_N3" setting="011"/>
-      <efxpt:value name="RXDP_N4" setting="100"/>
+      <efxpt:value name="RXD0" setting="000"/>
+      <efxpt:value name="RXD1" setting="001"/>
+      <efxpt:value name="RXD2" setting="010"/>
+      <efxpt:value name="RXD3" setting="011"/>
+      <efxpt:value name="RXD4" setting="100"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_LANE_SWAP_LAN2">
-      <efxpt:value name="RXDP_N0" setting="000"/>
-      <efxpt:value name="RXDP_N1" setting="001"/>
-      <efxpt:value name="RXDP_N2" setting="010"/>
-      <efxpt:value name="RXDP_N3" setting="011"/>
-      <efxpt:value name="RXDP_N4" setting="100"/>
+      <efxpt:value name="RXD0" setting="000"/>
+      <efxpt:value name="RXD1" setting="001"/>
+      <efxpt:value name="RXD2" setting="010"/>
+      <efxpt:value name="RXD3" setting="011"/>
+      <efxpt:value name="RXD4" setting="100"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_LANE_SWAP_LAN1">
-      <efxpt:value name="RXDP_N0" setting="000"/>
-      <efxpt:value name="RXDP_N1" setting="001"/>
-      <efxpt:value name="RXDP_N2" setting="010"/>
-      <efxpt:value name="RXDP_N3" setting="011"/>
-      <efxpt:value name="RXDP_N4" setting="100"/>
+      <efxpt:value name="RXD0" setting="000"/>
+      <efxpt:value name="RXD1" setting="001"/>
+      <efxpt:value name="RXD2" setting="010"/>
+      <efxpt:value name="RXD3" setting="011"/>
+      <efxpt:value name="RXD4" setting="100"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_LANE_SWAP_LAN0">
-      <efxpt:value name="RXDP_N0" setting="000"/>
-      <efxpt:value name="RXDP_N1" setting="001"/>
-      <efxpt:value name="RXDP_N2" setting="010"/>
-      <efxpt:value name="RXDP_N3" setting="011"/>
-      <efxpt:value name="RXDP_N4" setting="100"/>
-    </efxpt:parameter>
-    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_CLK">
-      <efxpt:value name="DISABLE" setting="0"/>
-      <efxpt:value name="ENABLE" setting="1"/>
-    </efxpt:parameter>
-    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN3">
-      <efxpt:value name="DISABLE" setting="0"/>
-      <efxpt:value name="ENABLE" setting="1"/>
-    </efxpt:parameter>
-    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN2">
-      <efxpt:value name="DISABLE" setting="0"/>
-      <efxpt:value name="ENABLE" setting="1"/>
-    </efxpt:parameter>
-    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN1">
-      <efxpt:value name="DISABLE" setting="0"/>
-      <efxpt:value name="ENABLE" setting="1"/>
-    </efxpt:parameter>
-    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN0">
-      <efxpt:value name="DISABLE" setting="0"/>
-      <efxpt:value name="ENABLE" setting="1"/>
+      <efxpt:value name="RXD0" setting="000"/>
+      <efxpt:value name="RXD1" setting="001"/>
+      <efxpt:value name="RXD2" setting="010"/>
+      <efxpt:value name="RXD3" setting="011"/>
+      <efxpt:value name="RXD4" setting="100"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_LANE_SWAP_CLK">
-      <efxpt:value name="RXDP_N0" setting="000"/>
-      <efxpt:value name="RXDP_N1" setting="001"/>
-      <efxpt:value name="RXDP_N2" setting="010"/>
-      <efxpt:value name="RXDP_N3" setting="011"/>
-      <efxpt:value name="RXDP_N4" setting="100"/>
+      <efxpt:value name="RXD0" setting="000"/>
+      <efxpt:value name="RXD1" setting="001"/>
+      <efxpt:value name="RXD2" setting="010"/>
+      <efxpt:value name="RXD3" setting="011"/>
+      <efxpt:value name="RXD4" setting="100"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN3">
+      <efxpt:value name="NORMAL" setting="0"/>
+      <efxpt:value name="SWAP_PN" setting="1"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN2">
+      <efxpt:value name="NORMAL" setting="0"/>
+      <efxpt:value name="SWAP_PN" setting="1"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN1">
+      <efxpt:value name="NORMAL" setting="0"/>
+      <efxpt:value name="SWAP_PN" setting="1"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_LAN0">
+      <efxpt:value name="NORMAL" setting="0"/>
+      <efxpt:value name="SWAP_PN" setting="1"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_DPDN_SWAP_CLK">
+      <efxpt:value name="NORMAL" setting="0"/>
+      <efxpt:value name="SWAP_PN" setting="1"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="6" name="PCR_DEBUG_MODE_SEL">
       <efxpt:value name="FIXED" setting="000000"/>
@@ -789,28 +869,62 @@
       <efxpt:value name="FIXED" setting="00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101000000000000000000000000000000000000000000000000000000000000000000000"/>
     </efxpt:parameter>
   </efxpt:block_def>
-  <efxpt:block_def bitsize="522" name="mipi_tx" paramsize="20">
+  <efxpt:block_def bitsize="522" name="mipi_tx" paramsize="54">
     <efxpt:sequence>
       <efxpt:parameter index="0" name="PCR_OBS_MODE"/>
       <efxpt:parameter index="1" name="PCR_PWRUP_MODE"/>
       <efxpt:parameter index="2" name="PCR_USRCTRL_RST"/>
       <efxpt:parameter index="3" name="PCR_PWRDN_N"/>
       <efxpt:parameter index="4" name="PCR_TWAKEUP_TIMER_REG"/>
-      <efxpt:parameter index="5" name="PCR_XCFGI"/>
-      <efxpt:parameter index="6" name="PCR_CFG_BYPASSLDO"/>
-      <efxpt:parameter index="7" name="PCR_CFG_LANE_SWAP0"/>
-      <efxpt:parameter index="8" name="PCR_CFG_LANE_SWAP1"/>
-      <efxpt:parameter index="9" name="PCR_CFG_LANE_SWAP2"/>
-      <efxpt:parameter index="10" name="PCR_CFG_LANE_SWAP3"/>
-      <efxpt:parameter index="11" name="PCR_CFG_LANE_SWAP4"/>
-      <efxpt:parameter index="12" name="PCR_VCONTROL"/>
-      <efxpt:parameter index="13" name="PCR_REFCLK_IN_SEL"/>
-      <efxpt:parameter index="14" name="PCR_PLL_CLK_SEL"/>
-      <efxpt:parameter index="15" name="PCR_T_INIT"/>
-      <efxpt:parameter index="16" name="PCR_PHY_CLK_MODE"/>
-      <efxpt:parameter index="17" name="PCR_POLARITY_DATA_EN"/>
-      <efxpt:parameter index="18" name="PCR_POLARITY_VSYNC"/>
-      <efxpt:parameter index="19" name="PCR_POLARITY_HSYNC"/>
+      <efxpt:parameter index="5" name="PCR_XCFGI_RESERVED_0"/>
+      <efxpt:parameter index="6" name="PCR_XCFGI_ZEROTIME_CLK"/>
+      <efxpt:parameter index="7" name="PCR_XCFGI_RESERVED_1"/>
+      <efxpt:parameter index="8" name="PCR_XCFGI_PREPARETIME_CLK"/>
+      <efxpt:parameter index="9" name="PCR_XCFGI_RESERVED_2"/>
+      <efxpt:parameter index="10" name="PCR_XCFGI_CLK_POST"/>
+      <efxpt:parameter index="11" name="PCR_XCFGI_RESERVED_3"/>
+      <efxpt:parameter index="12" name="PCR_XCFGI_CLK_ZEROTIMEUP"/>
+      <efxpt:parameter index="13" name="PCR_XCFGI_RESERVED_4"/>
+      <efxpt:parameter index="14" name="PCR_XCFGI_ZEROTIME_DAT0"/>
+      <efxpt:parameter index="15" name="PCR_XCFGI_RESERVED_5"/>
+      <efxpt:parameter index="16" name="PCR_XCFGI_PREPARETIME_DAT0"/>
+      <efxpt:parameter index="17" name="PCR_XCFGI_RESERVED_6"/>
+      <efxpt:parameter index="18" name="PCR_XCFGI_ZEROTIME_DAT1"/>
+      <efxpt:parameter index="19" name="PCR_XCFGI_RESERVED_7"/>
+      <efxpt:parameter index="20" name="PCR_XCFGI_PREPARETIME_DAT1"/>
+      <efxpt:parameter index="21" name="PCR_XCFGI_RESERVED_8"/>
+      <efxpt:parameter index="22" name="PCR_XCFGI_TRAILTIME_CLK"/>
+      <efxpt:parameter index="23" name="PCR_XCFGI_RESERVED_9"/>
+      <efxpt:parameter index="24" name="PCR_XCFGI_TRAILTIME_DAT0"/>
+      <efxpt:parameter index="25" name="PCR_XCFGI_RESERVED_10"/>
+      <efxpt:parameter index="26" name="PCR_XCFGI_TRAILTIME_DAT1"/>
+      <efxpt:parameter index="27" name="PCR_XCFGI_RESERVED_11"/>
+      <efxpt:parameter index="28" name="PCR_XCFGI_ZEROTIME_DAT2"/>
+      <efxpt:parameter index="29" name="PCR_XCFGI_RESERVED_12"/>
+      <efxpt:parameter index="30" name="PCR_XCFGI_PREPARETIME_DAT2"/>
+      <efxpt:parameter index="31" name="PCR_XCFGI_RESERVED_13"/>
+      <efxpt:parameter index="32" name="PCR_XCFGI_ZEROTIME_DAT3"/>
+      <efxpt:parameter index="33" name="PCR_XCFGI_RESERVED_14"/>
+      <efxpt:parameter index="34" name="PCR_XCFGI_PREPARETIME_DAT3"/>
+      <efxpt:parameter index="35" name="PCR_XCFGI_RESERVED_15"/>
+      <efxpt:parameter index="36" name="PCR_XCFGI_TRAILTIME_DAT2"/>
+      <efxpt:parameter index="37" name="PCR_XCFGI_RESERVED_16"/>
+      <efxpt:parameter index="38" name="PCR_XCFGI_TRAILTIME_DAT3"/>
+      <efxpt:parameter index="39" name="PCR_XCFGI_RESERVED_17"/>
+      <efxpt:parameter index="40" name="PCR_CFG_BYPASSLDO"/>
+      <efxpt:parameter index="41" name="PCR_CFG_LANE_SWAP0"/>
+      <efxpt:parameter index="42" name="PCR_CFG_LANE_SWAP1"/>
+      <efxpt:parameter index="43" name="PCR_CFG_LANE_SWAP2"/>
+      <efxpt:parameter index="44" name="PCR_CFG_LANE_SWAP3"/>
+      <efxpt:parameter index="45" name="PCR_CFG_LANE_SWAP4"/>
+      <efxpt:parameter index="46" name="PCR_VCONTROL"/>
+      <efxpt:parameter index="47" name="PCR_REFCLK_IN_SEL"/>
+      <efxpt:parameter index="48" name="PCR_PLL_CLK_SEL"/>
+      <efxpt:parameter index="49" name="PCR_T_INIT"/>
+      <efxpt:parameter index="50" name="PCR_PHY_CLK_MODE"/>
+      <efxpt:parameter index="51" name="PCR_POLARITY_DATA_EN"/>
+      <efxpt:parameter index="52" name="PCR_POLARITY_VSYNC"/>
+      <efxpt:parameter index="53" name="PCR_POLARITY_HSYNC"/>
     </efxpt:sequence>
     <efxpt:parameter bitsize="2" name="PCR_OBS_MODE">
       <efxpt:value name="RX_DEBUG_OUT" setting="00"/>
@@ -819,7 +933,7 @@
       <efxpt:value name="TX_MPOSV_UPPER" setting="10"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_PWRUP_MODE">
-      <efxpt:value name="FIXED" setting="0"/>
+      <efxpt:value name="FIXED" setting="1"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_USRCTRL_RST">
       <efxpt:value name="DISABLE" setting="0"/>
@@ -832,47 +946,297 @@
     <efxpt:parameter bitsize="16" name="PCR_TWAKEUP_TIMER_REG">
       <efxpt:value name="FIXED" setting="0100111100000000"/>
     </efxpt:parameter>
-    <efxpt:parameter bitsize="448" name="PCR_XCFGI">
-      <efxpt:value name="FIXED" setting="0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000011011010011110100111101001111000000000000000000000000001001000000000000101010100100100000100100000000000000000"/>
+    <efxpt:parameter bitsize="224" name="PCR_XCFGI_RESERVED_0">
+      <efxpt:value name="FIXED" setting="00000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000011011010011110100111101001111000000000000000000000000001001000000000000101010100100100000100100000000000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="3" name="PCR_XCFGI_ZEROTIME_CLK">
+      <efxpt:value name="N1" setting="001"/>
+      <efxpt:value name="N2" setting="011"/>
+      <efxpt:value name="P0" setting="000"/>
+      <efxpt:value name="P1" setting="010"/>
+      <efxpt:value name="P10" setting="110"/>
+      <efxpt:value name="P15" setting="111"/>
+      <efxpt:value name="P2" setting="100"/>
+      <efxpt:value name="P5" setting="101"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_XCFGI_RESERVED_1">
+      <efxpt:value name="FIXED" setting="0"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_PREPARETIME_CLK">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P1" setting="10"/>
+      <efxpt:value name="P2" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_2">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="3" name="PCR_XCFGI_CLK_POST">
+      <efxpt:value name="N1" setting="001"/>
+      <efxpt:value name="N2" setting="011"/>
+      <efxpt:value name="P0" setting="000"/>
+      <efxpt:value name="P1" setting="010"/>
+      <efxpt:value name="P10" setting="110"/>
+      <efxpt:value name="P15" setting="111"/>
+      <efxpt:value name="P2" setting="100"/>
+      <efxpt:value name="P5" setting="101"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="1" name="PCR_XCFGI_RESERVED_3">
+      <efxpt:value name="FIXED" setting="0"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_CLK_ZEROTIMEUP">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P2" setting="10"/>
+      <efxpt:value name="P5" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_4">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_ZEROTIME_DAT0">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P10" setting="11"/>
+      <efxpt:value name="P5" setting="10"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_5">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_PREPARETIME_DAT0">
+      <efxpt:value name="N1" setting="10"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P1" setting="01"/>
+      <efxpt:value name="P3" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="10" name="PCR_XCFGI_RESERVED_6">
+      <efxpt:value name="FIXED" setting="0000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_ZEROTIME_DAT1">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P10" setting="11"/>
+      <efxpt:value name="P5" setting="10"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_7">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_PREPARETIME_DAT1">
+      <efxpt:value name="N1" setting="10"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P1" setting="01"/>
+      <efxpt:value name="P3" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="74" name="PCR_XCFGI_RESERVED_8">
+      <efxpt:value name="FIXED" setting="00000000000000000000000000000000000000000000000000000000000000000000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_TRAILTIME_CLK">
+      <efxpt:value name="N1" setting="0110"/>
+      <efxpt:value name="N2" setting="0101"/>
+      <efxpt:value name="N3" setting="0100"/>
+      <efxpt:value name="N4" setting="0011"/>
+      <efxpt:value name="N5" setting="0010"/>
+      <efxpt:value name="N6" setting="0001"/>
+      <efxpt:value name="P0" setting="0000"/>
+      <efxpt:value name="P1" setting="1000"/>
+      <efxpt:value name="P2" setting="1001"/>
+      <efxpt:value name="P3" setting="1010"/>
+      <efxpt:value name="P4" setting="1011"/>
+      <efxpt:value name="P5" setting="1100"/>
+      <efxpt:value name="P6" setting="1101"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="4" name="PCR_XCFGI_RESERVED_9">
+      <efxpt:value name="FIXED" setting="0000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="5" name="PCR_XCFGI_TRAILTIME_DAT0">
+      <efxpt:value name="N1" setting="00001"/>
+      <efxpt:value name="N2" setting="00010"/>
+      <efxpt:value name="N3" setting="00011"/>
+      <efxpt:value name="N4" setting="00100"/>
+      <efxpt:value name="N5" setting="00101"/>
+      <efxpt:value name="N6" setting="00110"/>
+      <efxpt:value name="N7" setting="00111"/>
+      <efxpt:value name="ONE_US" setting="01111"/>
+      <efxpt:value name="P0" setting="00000"/>
+      <efxpt:value name="P1" setting="10001"/>
+      <efxpt:value name="P10" setting="11010"/>
+      <efxpt:value name="P11" setting="11011"/>
+      <efxpt:value name="P12" setting="11100"/>
+      <efxpt:value name="P13" setting="11101"/>
+      <efxpt:value name="P14" setting="11110"/>
+      <efxpt:value name="P15" setting="11111"/>
+      <efxpt:value name="P2" setting="10010"/>
+      <efxpt:value name="P3" setting="10011"/>
+      <efxpt:value name="P4" setting="10100"/>
+      <efxpt:value name="P5" setting="10101"/>
+      <efxpt:value name="P6" setting="10110"/>
+      <efxpt:value name="P7" setting="10111"/>
+      <efxpt:value name="P8" setting="11000"/>
+      <efxpt:value name="P9" setting="11001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="3" name="PCR_XCFGI_RESERVED_10">
+      <efxpt:value name="FIXED" setting="000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="5" name="PCR_XCFGI_TRAILTIME_DAT1">
+      <efxpt:value name="N1" setting="00001"/>
+      <efxpt:value name="N2" setting="00010"/>
+      <efxpt:value name="N3" setting="00011"/>
+      <efxpt:value name="N4" setting="00100"/>
+      <efxpt:value name="N5" setting="00101"/>
+      <efxpt:value name="N6" setting="00110"/>
+      <efxpt:value name="N7" setting="00111"/>
+      <efxpt:value name="ONE_US" setting="01111"/>
+      <efxpt:value name="P0" setting="00000"/>
+      <efxpt:value name="P1" setting="10001"/>
+      <efxpt:value name="P10" setting="11010"/>
+      <efxpt:value name="P11" setting="11011"/>
+      <efxpt:value name="P12" setting="11100"/>
+      <efxpt:value name="P13" setting="11101"/>
+      <efxpt:value name="P14" setting="11110"/>
+      <efxpt:value name="P15" setting="11111"/>
+      <efxpt:value name="P2" setting="10010"/>
+      <efxpt:value name="P3" setting="10011"/>
+      <efxpt:value name="P4" setting="10100"/>
+      <efxpt:value name="P5" setting="10101"/>
+      <efxpt:value name="P6" setting="10110"/>
+      <efxpt:value name="P7" setting="10111"/>
+      <efxpt:value name="P8" setting="11000"/>
+      <efxpt:value name="P9" setting="11001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="19" name="PCR_XCFGI_RESERVED_11">
+      <efxpt:value name="FIXED" setting="0000000000000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_ZEROTIME_DAT2">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P10" setting="11"/>
+      <efxpt:value name="P5" setting="10"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_12">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_PREPARETIME_DAT2">
+      <efxpt:value name="N1" setting="10"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P1" setting="01"/>
+      <efxpt:value name="P3" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="10" name="PCR_XCFGI_RESERVED_13">
+      <efxpt:value name="FIXED" setting="0000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_ZEROTIME_DAT3">
+      <efxpt:value name="N1" setting="01"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P10" setting="11"/>
+      <efxpt:value name="P5" setting="10"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_RESERVED_14">
+      <efxpt:value name="FIXED" setting="00"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="2" name="PCR_XCFGI_PREPARETIME_DAT3">
+      <efxpt:value name="N1" setting="10"/>
+      <efxpt:value name="P0" setting="00"/>
+      <efxpt:value name="P1" setting="01"/>
+      <efxpt:value name="P3" setting="11"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="34" name="PCR_XCFGI_RESERVED_15">
+      <efxpt:value name="FIXED" setting="0000000000000000000000000000000000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="5" name="PCR_XCFGI_TRAILTIME_DAT2">
+      <efxpt:value name="N1" setting="00001"/>
+      <efxpt:value name="N2" setting="00010"/>
+      <efxpt:value name="N3" setting="00011"/>
+      <efxpt:value name="N4" setting="00100"/>
+      <efxpt:value name="N5" setting="00101"/>
+      <efxpt:value name="N6" setting="00110"/>
+      <efxpt:value name="N7" setting="00111"/>
+      <efxpt:value name="ONE_US" setting="01111"/>
+      <efxpt:value name="P0" setting="00000"/>
+      <efxpt:value name="P1" setting="10001"/>
+      <efxpt:value name="P10" setting="11010"/>
+      <efxpt:value name="P11" setting="11011"/>
+      <efxpt:value name="P12" setting="11100"/>
+      <efxpt:value name="P13" setting="11101"/>
+      <efxpt:value name="P14" setting="11110"/>
+      <efxpt:value name="P15" setting="11111"/>
+      <efxpt:value name="P2" setting="10010"/>
+      <efxpt:value name="P3" setting="10011"/>
+      <efxpt:value name="P4" setting="10100"/>
+      <efxpt:value name="P5" setting="10101"/>
+      <efxpt:value name="P6" setting="10110"/>
+      <efxpt:value name="P7" setting="10111"/>
+      <efxpt:value name="P8" setting="11000"/>
+      <efxpt:value name="P9" setting="11001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="3" name="PCR_XCFGI_RESERVED_16">
+      <efxpt:value name="FIXED" setting="000"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="5" name="PCR_XCFGI_TRAILTIME_DAT3">
+      <efxpt:value name="N1" setting="00001"/>
+      <efxpt:value name="N2" setting="00010"/>
+      <efxpt:value name="N3" setting="00011"/>
+      <efxpt:value name="N4" setting="00100"/>
+      <efxpt:value name="N5" setting="00101"/>
+      <efxpt:value name="N6" setting="00110"/>
+      <efxpt:value name="N7" setting="00111"/>
+      <efxpt:value name="ONE_US" setting="01111"/>
+      <efxpt:value name="P0" setting="00000"/>
+      <efxpt:value name="P1" setting="10001"/>
+      <efxpt:value name="P10" setting="11010"/>
+      <efxpt:value name="P11" setting="11011"/>
+      <efxpt:value name="P12" setting="11100"/>
+      <efxpt:value name="P13" setting="11101"/>
+      <efxpt:value name="P14" setting="11110"/>
+      <efxpt:value name="P15" setting="11111"/>
+      <efxpt:value name="P2" setting="10010"/>
+      <efxpt:value name="P3" setting="10011"/>
+      <efxpt:value name="P4" setting="10100"/>
+      <efxpt:value name="P5" setting="10101"/>
+      <efxpt:value name="P6" setting="10110"/>
+      <efxpt:value name="P7" setting="10111"/>
+      <efxpt:value name="P8" setting="11000"/>
+      <efxpt:value name="P9" setting="11001"/>
+    </efxpt:parameter>
+    <efxpt:parameter bitsize="3" name="PCR_XCFGI_RESERVED_17">
+      <efxpt:value name="FIXED" setting="000"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="1" name="PCR_CFG_BYPASSLDO">
       <efxpt:value name="DISABLE" setting="0"/>
       <efxpt:value name="ENABLE" setting="1"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_CFG_LANE_SWAP0">
-      <efxpt:value name="TXDP_N0" setting="000"/>
-      <efxpt:value name="TXDP_N1" setting="001"/>
-      <efxpt:value name="TXDP_N2" setting="010"/>
-      <efxpt:value name="TXDP_N3" setting="011"/>
-      <efxpt:value name="TXDP_N4" setting="100"/>
+      <efxpt:value name="CLOCK" setting="100"/>
+      <efxpt:value name="DATA_0" setting="000"/>
+      <efxpt:value name="DATA_1" setting="001"/>
+      <efxpt:value name="DATA_2" setting="010"/>
+      <efxpt:value name="DATA_3" setting="011"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_CFG_LANE_SWAP1">
-      <efxpt:value name="TXDP_N0" setting="000"/>
-      <efxpt:value name="TXDP_N1" setting="001"/>
-      <efxpt:value name="TXDP_N2" setting="010"/>
-      <efxpt:value name="TXDP_N3" setting="011"/>
-      <efxpt:value name="TXDP_N4" setting="100"/>
+      <efxpt:value name="CLOCK" setting="100"/>
+      <efxpt:value name="DATA_0" setting="000"/>
+      <efxpt:value name="DATA_1" setting="001"/>
+      <efxpt:value name="DATA_2" setting="010"/>
+      <efxpt:value name="DATA_3" setting="011"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_CFG_LANE_SWAP2">
-      <efxpt:value name="TXDP_N0" setting="000"/>
-      <efxpt:value name="TXDP_N1" setting="001"/>
-      <efxpt:value name="TXDP_N2" setting="010"/>
-      <efxpt:value name="TXDP_N3" setting="011"/>
-      <efxpt:value name="TXDP_N4" setting="100"/>
+      <efxpt:value name="CLOCK" setting="100"/>
+      <efxpt:value name="DATA_0" setting="000"/>
+      <efxpt:value name="DATA_1" setting="001"/>
+      <efxpt:value name="DATA_2" setting="010"/>
+      <efxpt:value name="DATA_3" setting="011"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_CFG_LANE_SWAP3">
-      <efxpt:value name="TXDP_N0" setting="000"/>
-      <efxpt:value name="TXDP_N1" setting="001"/>
-      <efxpt:value name="TXDP_N2" setting="010"/>
-      <efxpt:value name="TXDP_N3" setting="011"/>
-      <efxpt:value name="TXDP_N4" setting="100"/>
+      <efxpt:value name="CLOCK" setting="100"/>
+      <efxpt:value name="DATA_0" setting="000"/>
+      <efxpt:value name="DATA_1" setting="001"/>
+      <efxpt:value name="DATA_2" setting="010"/>
+      <efxpt:value name="DATA_3" setting="011"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="3" name="PCR_CFG_LANE_SWAP4">
-      <efxpt:value name="TXDP_N0" setting="000"/>
-      <efxpt:value name="TXDP_N1" setting="001"/>
-      <efxpt:value name="TXDP_N2" setting="010"/>
-      <efxpt:value name="TXDP_N3" setting="011"/>
-      <efxpt:value name="TXDP_N4" setting="100"/>
+      <efxpt:value name="CLOCK" setting="100"/>
+      <efxpt:value name="DATA_0" setting="000"/>
+      <efxpt:value name="DATA_1" setting="001"/>
+      <efxpt:value name="DATA_2" setting="010"/>
+      <efxpt:value name="DATA_3" setting="011"/>
     </efxpt:parameter>
     <efxpt:parameter bitsize="5" name="PCR_VCONTROL">
       <efxpt:value name="FIXED" setting="00000"/>
@@ -2089,15 +2453,15 @@
     <efxpt:parameter name="UNUSED" value="ENABLE"/>
   </efxpt:instance>
   <efxpt:instance id="MIPI_TX0" type="mipi_tx">
-    <efxpt:parameter name="PCR_CFG_BYPASSLDO" value="DISABLE"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP0" value="TXDP_N0"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP1" value="TXDP_N1"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP2" value="TXDP_N4"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP3" value="TXDP_N2"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP4" value="TXDP_N3"/>
+    <efxpt:parameter name="PCR_CFG_BYPASSLDO" value="ENABLE"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP0" value="DATA_0"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP1" value="DATA_1"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP2" value="CLOCK"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP3" value="DATA_2"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP4" value="DATA_3"/>
     <efxpt:parameter name="PCR_OBS_MODE" value="RX_DEBUG_OUT"/>
     <efxpt:parameter name="PCR_PHY_CLK_MODE" value="ENABLE"/>
-    <efxpt:parameter name="PCR_PLL_CLK_SEL" value="0"/>
+    <efxpt:parameter name="PCR_PLL_CLK_SEL" value="364"/>
     <efxpt:parameter name="PCR_POLARITY_DATA_EN" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_HSYNC" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_VSYNC" value="HIGH"/>
@@ -2108,47 +2472,86 @@
     <efxpt:parameter name="PCR_T_INIT" value="FIXED"/>
     <efxpt:parameter name="PCR_USRCTRL_RST" value="DISABLE"/>
     <efxpt:parameter name="PCR_VCONTROL" value="FIXED"/>
-    <efxpt:parameter name="PCR_XCFGI" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_CLK_POST" value="P15"/>
+    <efxpt:parameter name="PCR_XCFGI_CLK_ZEROTIMEUP" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT0" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT1" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT2" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT3" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_0" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_10" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_11" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_12" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_13" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_14" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_15" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_16" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_17" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_2" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_3" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_4" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_5" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_6" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_7" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_8" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_9" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT0" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT1" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT2" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT3" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT0" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT1" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT2" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT3" value="P0"/>
   </efxpt:instance>
   <efxpt:instance id="MIPI_RX0" type="mipi_rx">
     <efxpt:parameter name="PCR_DEBUG_EN_W" value="FIXED"/>
     <efxpt:parameter name="PCR_DEBUG_MODE_SEL" value="FIXED"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_CLK" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN0" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN1" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN2" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN3" value="DISABLE"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_CLK" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN0" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN1" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN2" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN3" value="NORMAL"/>
     <efxpt:parameter name="PCR_HS_RX_TIMEOUT_CNT" value="FIXED"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXDP_N2"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXDP_N0"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXDP_N1"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN2" value="RXDP_N3"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN3" value="RXDP_N4"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXD2"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXD0"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXD1"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN2" value="RXD3"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN3" value="RXD4"/>
     <efxpt:parameter name="PCR_MP_TEST_EN" value="DISABLE"/>
     <efxpt:parameter name="PCR_MP_TEST_MODE_SEL" value="FIXED"/>
     <efxpt:parameter name="PCR_POLARITY_HSYNC" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_VSYNC" value="HIGH"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_CLK" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN0" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN1" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN2" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN3" value="FIXED"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_CLK" value="8"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN0" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN1" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN2" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN3" value="7"/>
     <efxpt:parameter name="PCR_PWRDN_N" value="DISABLE"/>
     <efxpt:parameter name="PCR_PWRUP_MODE" value="FIXED"/>
     <efxpt:parameter name="PCR_USRCTRL_RST" value="DISABLE"/>
     <efxpt:parameter name="PCR_XCFGI0" value="FIXED"/>
-    <efxpt:parameter name="PCR_XCFGI1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI1_RESERVED_0" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI1_RESERVED_1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN0" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN1" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN2" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN3" value="9"/>
   </efxpt:instance>
   <efxpt:instance id="MIPI_TX1" type="mipi_tx">
-    <efxpt:parameter name="PCR_CFG_BYPASSLDO" value="DISABLE"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP0" value="TXDP_N0"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP1" value="TXDP_N1"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP2" value="TXDP_N4"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP3" value="TXDP_N2"/>
-    <efxpt:parameter name="PCR_CFG_LANE_SWAP4" value="TXDP_N3"/>
+    <efxpt:parameter name="PCR_CFG_BYPASSLDO" value="ENABLE"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP0" value="DATA_0"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP1" value="DATA_1"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP2" value="CLOCK"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP3" value="DATA_2"/>
+    <efxpt:parameter name="PCR_CFG_LANE_SWAP4" value="DATA_3"/>
     <efxpt:parameter name="PCR_OBS_MODE" value="RX_DEBUG_OUT"/>
     <efxpt:parameter name="PCR_PHY_CLK_MODE" value="ENABLE"/>
-    <efxpt:parameter name="PCR_PLL_CLK_SEL" value="0"/>
+    <efxpt:parameter name="PCR_PLL_CLK_SEL" value="364"/>
     <efxpt:parameter name="PCR_POLARITY_DATA_EN" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_HSYNC" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_VSYNC" value="HIGH"/>
@@ -2159,36 +2562,75 @@
     <efxpt:parameter name="PCR_T_INIT" value="FIXED"/>
     <efxpt:parameter name="PCR_USRCTRL_RST" value="DISABLE"/>
     <efxpt:parameter name="PCR_VCONTROL" value="FIXED"/>
-    <efxpt:parameter name="PCR_XCFGI" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_CLK_POST" value="P15"/>
+    <efxpt:parameter name="PCR_XCFGI_CLK_ZEROTIMEUP" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT0" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT1" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT2" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT3" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_0" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_10" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_11" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_12" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_13" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_14" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_15" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_16" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_17" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_2" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_3" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_4" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_5" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_6" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_7" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_8" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_RESERVED_9" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT0" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT1" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT2" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT3" value="ONE_US"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT0" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT1" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT2" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT3" value="P0"/>
   </efxpt:instance>
   <efxpt:instance id="MIPI_RX1" type="mipi_rx">
     <efxpt:parameter name="PCR_DEBUG_EN_W" value="FIXED"/>
     <efxpt:parameter name="PCR_DEBUG_MODE_SEL" value="FIXED"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_CLK" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN0" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN1" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN2" value="DISABLE"/>
-    <efxpt:parameter name="PCR_DPDN_SWAP_LAN3" value="DISABLE"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_CLK" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN0" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN1" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN2" value="NORMAL"/>
+    <efxpt:parameter name="PCR_DPDN_SWAP_LAN3" value="NORMAL"/>
     <efxpt:parameter name="PCR_HS_RX_TIMEOUT_CNT" value="FIXED"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXDP_N2"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXDP_N0"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXDP_N1"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN2" value="RXDP_N3"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN3" value="RXDP_N4"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXD2"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXD0"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXD1"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN2" value="RXD3"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN3" value="RXD4"/>
     <efxpt:parameter name="PCR_MP_TEST_EN" value="DISABLE"/>
     <efxpt:parameter name="PCR_MP_TEST_MODE_SEL" value="FIXED"/>
     <efxpt:parameter name="PCR_POLARITY_HSYNC" value="HIGH"/>
     <efxpt:parameter name="PCR_POLARITY_VSYNC" value="HIGH"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_CLK" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN0" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN1" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN2" value="FIXED"/>
-    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN3" value="FIXED"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_CLK" value="8"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN0" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN1" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN2" value="7"/>
+    <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN3" value="7"/>
     <efxpt:parameter name="PCR_PWRDN_N" value="DISABLE"/>
     <efxpt:parameter name="PCR_PWRUP_MODE" value="FIXED"/>
     <efxpt:parameter name="PCR_USRCTRL_RST" value="DISABLE"/>
     <efxpt:parameter name="PCR_XCFGI0" value="FIXED"/>
-    <efxpt:parameter name="PCR_XCFGI1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI1_RESERVED_0" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI1_RESERVED_1" value="FIXED"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN0" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN1" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN2" value="9"/>
+    <efxpt:parameter name="PCR_XCFGI_STOP11_LAN3" value="9"/>
   </efxpt:instance>
   <efxpt:instance id="PLL_TR1" type="pll">
     <efxpt:parameter name="PCR_BYPASS_LOCK" value="ENABLE"/>

@@ -31531,7 +31531,7 @@ LUT__32581eft(0)/lut4(0)/lut(1)"names
 Ndual_clock_fifo_wrapper/inst_dual_clock_fifo/dual_clock_fifo_wrapper/o_full~FFeftlogic"f
 Ndual_clock_fifo_wrapper/inst_dual_clock_fifo/dual_clock_fifo_wrapper/o_full~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32602eft(0)/lut4(0)/lut(1)"names
+LUT__32603eft(0)/lut4(0)/lut(1)"names
 –
 7dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_re_1P~FFeftlogic"O
 7dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_re_1P~FFeft(0)/ff(0)"EFX_FF
@@ -31542,7 +31542,7 @@ LUT__32602eft(0)/lut4(0)/lut(1)"names
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_raddrg_1P[0]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_raddrg_1P[0]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32603eft(0)/lut4(0)/lut(1)"names
+LUT__32604eft(0)/lut4(0)/lut(1)"names
 ¤
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_raddrg_2P[0]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_raddrg_2P[0]~FFeft(0)/ff(0)"EFX_FF
@@ -31556,7 +31556,7 @@ LUT__32603eft(0)/lut4(0)/lut(1)"names
 :dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FFeftlogic"R
 :dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32611eft(0)/lut4(0)/lut(1)"names
+LUT__32613eft(0)/lut4(0)/lut(1)"names
 ü
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrb_1P[1]~FFeft
 arithmetic"V
@@ -31606,17 +31606,17 @@ arithmetic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[1]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[1]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32612eft(0)/lut4(0)/lut(1)"names
+LUT__32614eft(0)/lut4(0)/lut(1)"names
 Ð
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[2]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[2]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32597eft(0)/lut4(0)/lut(1)"names
+LUT__32590eft(0)/lut4(0)/lut(1)"names
 Ð
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[3]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[3]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32613eft(0)/lut4(0)/lut(1)"names
+LUT__32592eft(0)/lut4(0)/lut(1)"names
 Ð
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[4]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[4]~FFeft(0)/ff(0)"EFX_FF"*
@@ -31626,12 +31626,12 @@ LUT__32593eft(0)/lut4(0)/lut(1)"names
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[5]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[5]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32614eft(0)/lut4(0)/lut(1)"names
+LUT__32594eft(0)/lut4(0)/lut(1)"names
 Ð
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[6]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[6]~FFeft(0)/ff(0)"EFX_FF"*
 
-LUT__32591eft(0)/lut4(0)/lut(1)"names
+LUT__32595eft(0)/lut4(0)/lut(1)"names
 Ð
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[7]~FFeftlogic"V
 >dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_1P[7]~FFeft(0)/ff(0)"EFX_FF"*
@@ -32621,6 +32621,16 @@ LUT__32622efllogic"*
 LUT__32622efl(0)/lut4(0)/lut(1)"names
 D
 
+LUT__32612efllogic"*
+
+LUT__32612efl(0)/lut4(0)/lut(1)"names
+D
+
+LUT__32611efllogic"*
+
+LUT__32611efl(0)/lut4(0)/lut(1)"names
+D
+
 LUT__32610efllogic"*
 
 LUT__32610efl(0)/lut4(0)/lut(1)"names
@@ -32646,9 +32656,9 @@ LUT__32605efllogic"*
 LUT__32605efl(0)/lut4(0)/lut(1)"names
 D
 
-LUT__32604efllogic"*
+LUT__32602efllogic"*
 
-LUT__32604efl(0)/lut4(0)/lut(1)"names
+LUT__32602efl(0)/lut4(0)/lut(1)"names
 D
 
 LUT__32600efllogic"*
@@ -32666,24 +32676,9 @@ LUT__32598efllogic"*
 LUT__32598efl(0)/lut4(0)/lut(1)"names
 D
 
-LUT__32595efllogic"*
+LUT__32591efllogic"*
 
-LUT__32595efl(0)/lut4(0)/lut(1)"names
-D
-
-LUT__32594efllogic"*
-
-LUT__32594efl(0)/lut4(0)/lut(1)"names
-D
-
-LUT__32592efllogic"*
-
-LUT__32592efl(0)/lut4(0)/lut(1)"names
-D
-
-LUT__32590efllogic"*
-
-LUT__32590efl(0)/lut4(0)/lut(1)"names
+LUT__32591efl(0)/lut4(0)/lut(1)"names
 D
 
 LUT__32589efllogic"*
@@ -33289,6 +33284,11 @@ D
 LUT__32468efllogic"*
 
 LUT__32468efl(0)/lut4(0)/lut(1)"names
+D
+
+LUT__32597efllogic"*
+
+LUT__32597efl(0)/lut4(0)/lut(1)"names
 D
 
 LUT__32601efllogic"*

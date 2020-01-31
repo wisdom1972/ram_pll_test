@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<efx:project name="ram_pll" description="" last_change_date="Thu January 30 2020 12:17:57" location="C:/Efinity/2018.4/project/ram_pll_test" sw_version="2018.4.285" last_run_state="pass" last_run_tool="efx_pgm" last_run_flow="bitstream" config_result_in_sync="true" design_ood="sync" place_ood="sync" route_ood="sync" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
+<efx:project name="ram_pll" description="" last_change_date="周五 一月 31 2020 10:05:52" location="F:/efinity_prj/2019_2/ram_pll_test-master" sw_version="2019.2.192" last_run_state="pass" last_run_tool="efx_pgm" last_run_flow="bitstream" config_result_in_sync="true" design_ood="sync" place_ood="sync" route_ood="sync" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
     <efx:device_info>
         <efx:family name="Trion"/>
         <efx:device name="T20F256"/>
         <efx:timing_model name="C3"/>
     </efx:device_info>
-    <efx:design_info>
-        <efx:top_module name=""/>
-        <efx:design_file name="dual_clock_fifo.v"/>
-        <efx:design_file name="shift_reg.v"/>
-        <efx:design_file name="simple_dual_port_ram.v"/>
-        <efx:design_file name="single_port_rom.v"/>
-        <efx:design_file name="top.v"/>
-        <efx:design_file name="true_dual_port_ram.v"/>
+    <efx:design_info def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008">
+        <efx:top_module name="top"/>
+        <efx:design_file name="dual_clock_fifo.v" version="verilog_2k"/>
+        <efx:design_file name="shift_reg.v" version="verilog_2k"/>
+        <efx:design_file name="simple_dual_port_ram.v" version="verilog_2k"/>
+        <efx:design_file name="single_port_rom.v" version="verilog_2k"/>
+        <efx:design_file name="top.v" version="verilog_2k"/>
+        <efx:design_file name="true_dual_port_ram.v" version="verilog_2k"/>
+        <efx:top_vhdl_arch name=""/>
     </efx:design_info>
     <efx:constraint_info>
         <efx:sdc_file name="top.sdc"/>

@@ -1,13 +1,13 @@
 
 Efinix Static Timing Analysis Report
-Version: 2018.4.285 
-Date: Wed Mar 20 10:44:25 2019
+Version: 2019.2.192 
+Date: Fri Jan 31 10:05:45 2020
 
-Copyright (C) 2013 - 2018 Efinix Inc. All rights reserved.
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
  
 Top-level Entity Name: ram_pll
 
-SDC Filename: F:/efinity_prj/T20/ram_pll_test/top.sdc
+SDC Filename: F:/efinity_prj/2019_2/ram_pll_test-master/top.sdc
 
 Timing Model: C3
 	temperature : 0C to 85C
@@ -33,14 +33,16 @@ clk                26.670          37.495         {0.000 13.335}        clk
 
 Maximum possible analyzed clocks frequency
 Clock Name      Period (ns)   Frequency (MHz)   Edge
-clk                13.460          74.294     (R-R)
+clk                13.041          76.682     (R-R)
+
+Geomean max period: 13.041
 
 ---------- Clock Frequency Summary (end) ---------------
 
 ---------- 2. Clock Relationship Summary (begin) ----------
 
 Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
-clk              clk                  26.670        13.210     (R-R)
+clk              clk                  26.670        13.629     (R-R)
 
 NOTE: Values are in nanoseconds.
 
@@ -56,21 +58,21 @@ Path Detail Report (clk vs clk)
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin    : dual_clock_fifo_wrapper/inst_dual_clock_fifo/inst_simple_dual_port_ram/ram|RCLK
-Path End      : true_dual_port_ram/ram__15_8(00)__14_8(00)__13_8(00)__12_8(11)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WDATA[0]
+Path Begin    : ram_waddr[1]~FF|CLK
+Path End      : true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(11)__12_1(10)|WADDR[9]
 Launch Clock  : clk (RISE)
 Capture Clock : clk (RISE)
-Slack         : 13.21  (required time - arrival time)
-Delay         : 11.502
+Slack         : 13.629  (required time - arrival time)
+Delay         : 12.329
 
 Logic Level : 0
 Non-global nets on path : 1
 Global nets on path     : 0
 
 Launch Clock Path Delay        : 5.343
-+ Clock To Q + Data Path Delay : 13.304
++ Clock To Q + Data Path Delay : 12.885
 --------------------------------------------
-End-of-path arrival time       : 18.647
+End-of-path arrival time       : 18.228
 
 Constraint                     : 26.67
 + Capture Clock Path Delay     : 5.343
@@ -80,41 +82,41 @@ End-of-path required time      : 31.857
 
 
 Launch Clock Path
-pin name                                                                           model name     delay (ns)   cumulative delay (ns)    pins on net   location
-===============================================================================================================================================================
- clk                                                                                inpad                0                      0           2          (0,118)
- clk                                                                                inpad             0.26                   0.26           2          (0,118)
- clk                                                                                io                   0                   0.26           2          (0,118)
+pin name               model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==================================================================================================
+ clk                    inpad               0                      0           2          (0,118)
+ clk                    inpad            0.26                   0.26           2          (0,118)
+ clk                    io                  0                   0.26           2          (0,118)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in                                                                    gbuf_block       0.416                  0.676           2          (1,118)
- CLKBUF__0|I                                                                        gbuf             4.667                  5.343           2          (1,118)
- CLKBUF__0|O                                                                        gbuf                 0                  5.343       10832          (1,118)
- CLKBUF__0|clkout                                                                   gbuf_block           0                  5.343       10832          (1,118)
- dual_clock_fifo_wrapper/inst_dual_clock_fifo/inst_simple_dual_port_ram/ram|RCLK    ram_4096x20          0                  5.343       10832          (59,82)
+ CLKBUF__0|IO_in        gbuf_block      0.416                  0.676           2          (1,118)
+ CLKBUF__0|I            gbuf            4.667                  5.343           2          (1,118)
+ CLKBUF__0|O            gbuf                0                  5.343       10832          (1,118)
+ CLKBUF__0|clkout       gbuf_block          0                  5.343       10832          (1,118)
+ ram_waddr[1]~FF|CLK    ff                  0                  5.343       10832          (99,147)
 
 Data Path
-pin name                                                                                                                                         model name     delay (ns)   cumulative delay (ns)    pins on net   location
-=============================================================================================================================================================================================================================
- dual_clock_fifo_wrapper/inst_dual_clock_fifo/inst_simple_dual_port_ram/ram|RDATA[17]                                                             ram_4096x20       1.625                  1.625          17          (59,82)
- dual_clock_fifo_wrapper/inst_dual_clock_fifo/inst_simple_dual_port_ram/ram|O[17]                                                                 memory           11.502                 13.127          17          (59,82)
+pin name                                                                             model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================================================================================
+ ram_waddr[1]~FF|Q                                                                    ff                0.366                  0.366         131          (99,147)
+ ram_waddr[1]~FF|O_seq                                                                eft              12.329                 12.695         131          (99,147)
    Routing elements:  
-     Manhattan distance of X:22, Y:20
- true_dual_port_ram/ram__15_8(00)__14_8(00)__13_8(00)__12_8(11)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WDATA[0]    ram_4096x20       0.177                 13.304          17          (37,62)
+     Manhattan distance of X:30, Y:45
+ true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(11)__12_1(10)|WADDR[9]    ram_4096x20        0.19                 12.885         131          (69,102)
 
 Capture Clock Path
-pin name                                                                                                                                     model name     delay (ns)   cumulative delay (ns)    pins on net   location
-=========================================================================================================================================================================================================================
- clk                                                                                                                                          inpad                0                      0           2          (0,118)
- clk                                                                                                                                          inpad             0.26                   0.26           2          (0,118)
- clk                                                                                                                                          io                   0                   0.26           2          (0,118)
+pin name                                                                         model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=============================================================================================================================================================
+ clk                                                                              inpad                0                      0           2          (0,118)
+ clk                                                                              inpad             0.26                   0.26           2          (0,118)
+ clk                                                                              io                   0                   0.26           2          (0,118)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in                                                                                                                              gbuf_block       0.416                  0.676           2          (1,118)
- CLKBUF__0|I                                                                                                                                  gbuf             4.667                  5.343           2          (1,118)
- CLKBUF__0|O                                                                                                                                  gbuf                 0                  5.343       10832          (1,118)
- CLKBUF__0|clkout                                                                                                                             gbuf_block           0                  5.343       10832          (1,118)
- true_dual_port_ram/ram__15_8(00)__14_8(00)__13_8(00)__12_8(11)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WCLK    ram_4096x20          0                  5.343       10832          (37,62)
+ CLKBUF__0|IO_in                                                                  gbuf_block       0.416                  0.676           2          (1,118)
+ CLKBUF__0|I                                                                      gbuf             4.667                  5.343           2          (1,118)
+ CLKBUF__0|O                                                                      gbuf                 0                  5.343       10832          (1,118)
+ CLKBUF__0|clkout                                                                 gbuf_block           0                  5.343       10832          (1,118)
+ true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(11)__12_1(10)|WCLK    ram_4096x20          0                  5.343       10832          (69,102)
 
 ---------- Path Details for Max Critical Paths (end) ---------------
 
@@ -128,11 +130,11 @@ Path Detail Report (clk vs clk)
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin    : rom_addr[2]~FF|CLK
-Path End      : single_port_rom/rom|RADDR[1]
+Path Begin    : ram_waddr[4]~FF|CLK
+Path End      : true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WADDR[0]
 Launch Clock  : clk (RISE)
 Capture Clock : clk (RISE)
-Slack         : 0.117  (arrival time - required time)
+Slack         : 0.086  (arrival time - required time)
 Delay         : 0.17
 
 Logic Level : 0
@@ -140,9 +142,9 @@ Non-global nets on path : 1
 Global nets on path     : 0
 
 Launch Clock Path Delay        : 2.055
-+ Clock To Q + Data Path Delay : 0.177
++ Clock To Q + Data Path Delay : 0.146
 --------------------------------------------
-End-of-path arrival time       : 2.232
+End-of-path arrival time       : 2.201
 
 Constraint                     : 0
 + Capture Clock Path Delay     : 2.055
@@ -152,40 +154,40 @@ End-of-path required time      : 2.115
 
 
 Launch Clock Path
-pin name              model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=================================================================================================
- clk                   inpad               0                      0           2          (0,118)
- clk                   inpad             0.1                    0.1           2          (0,118)
- clk                   io                  0                    0.1           2          (0,118)
+pin name               model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==================================================================================================
+ clk                    inpad               0                      0           2          (0,118)
+ clk                    inpad             0.1                    0.1           2          (0,118)
+ clk                    io                  0                    0.1           2          (0,118)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in       gbuf_block       0.16                   0.26           2          (1,118)
- CLKBUF__0|I           gbuf            1.795                  2.055           2          (1,118)
- CLKBUF__0|O           gbuf                0                  2.055       10832          (1,118)
- CLKBUF__0|clkout      gbuf_block          0                  2.055       10832          (1,118)
- rom_addr[2]~FF|CLK    ff                  0                  2.055       10832          (67,43)
+ CLKBUF__0|IO_in        gbuf_block       0.16                   0.26           2          (1,118)
+ CLKBUF__0|I            gbuf            1.795                  2.055           2          (1,118)
+ CLKBUF__0|O            gbuf                0                  2.055       10832          (1,118)
+ CLKBUF__0|clkout       gbuf_block          0                  2.055       10832          (1,118)
+ ram_waddr[4]~FF|CLK    ff                  0                  2.055       10832          (99,150)
 
 Data Path
-pin name                        model name     delay (ns)   cumulative delay (ns)    pins on net   location
-============================================================================================================
- rom_addr[2]~FF|Q                ff                0.141                  0.141           3          (67,43)
- rom_addr[2]~FF|O_seq            eft                0.17                  0.311           3          (67,43)
+pin name                                                                                                                                         model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=============================================================================================================================================================================================================================
+ ram_waddr[4]~FF|Q                                                                                                                                ff                0.141                  0.141         131          (99,150)
+ ram_waddr[4]~FF|O_seq                                                                                                                            eft                0.17                  0.311         131          (99,150)
    Routing elements:  
-     Manhattan distance of X:2, Y:1
- single_port_rom/rom|RADDR[1]    ram_4096x20      -0.134                  0.177           3          (69,42)
+     Manhattan distance of X:2, Y:8
+ true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WADDR[0]    ram_4096x20      -0.165                  0.146         131          (101,142)
 
 Capture Clock Path
-pin name                    model name     delay (ns)   cumulative delay (ns)    pins on net   location
-========================================================================================================
- clk                         inpad                0                      0           2          (0,118)
- clk                         inpad              0.1                    0.1           2          (0,118)
- clk                         io                   0                    0.1           2          (0,118)
+pin name                                                                                                                                     model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================================================================================
+ clk                                                                                                                                          inpad                0                      0           2          (0,118)
+ clk                                                                                                                                          inpad              0.1                    0.1           2          (0,118)
+ clk                                                                                                                                          io                   0                    0.1           2          (0,118)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in             gbuf_block        0.16                   0.26           2          (1,118)
- CLKBUF__0|I                 gbuf             1.795                  2.055           2          (1,118)
- CLKBUF__0|O                 gbuf                 0                  2.055       10832          (1,118)
- CLKBUF__0|clkout            gbuf_block           0                  2.055       10832          (1,118)
- single_port_rom/rom|RCLK    ram_4096x20          0                  2.055       10832          (69,42)
+ CLKBUF__0|IO_in                                                                                                                              gbuf_block        0.16                   0.26           2          (1,118)
+ CLKBUF__0|I                                                                                                                                  gbuf             1.795                  2.055           2          (1,118)
+ CLKBUF__0|O                                                                                                                                  gbuf                 0                  2.055       10832          (1,118)
+ CLKBUF__0|clkout                                                                                                                             gbuf_block           0                  2.055       10832          (1,118)
+ true_dual_port_ram/ram__15_8(11)__14_8(11)__13_8(00)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10)|WCLK    ram_4096x20          0                  2.055       10832          (101,142)
 
 ---------- Path Details for Min Critical Paths (end) ---------------

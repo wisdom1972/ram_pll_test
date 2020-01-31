@@ -1,9 +1,9 @@
 
 # Efinity Interface Designer SDC
-# Version: 2018.4.285
-# Date: 2019-03-20 10:19
+# Version: 2019.2.192
+# Date: 2020-01-31 10:03
 
-# Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved.
+# Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
 
 # Device: T20F256
 # Project: ram_pll

@@ -9,3 +9,7 @@
 [EFX-0006 VERI-ERROR] (F:/efinity_prj/T20/ram_pll_test/single_port_rom.v 33) cannot open file 'rom.inithex' (VERI-1012)
 [EFX-0006 VERI-ERROR] (F:/efinity_prj/T20/ram_pll_test/single_port_rom.v 33) cannot open file 'rom.inithex' (VERI-1012)
 [EFX-0006 VERI-ERROR] (F:/efinity_prj/T20/ram_pll_test/single_port_rom.v 33) cannot open file 'rom.inithex' (VERI-1012)
+[EFX-0007 VERI-ERROR] (E:/Efinity资料/个人/Wisdom/GitHut/ram_pll_test-master/single_port_rom.v 33) cannot open file 'rom.inithex' (VERI-1012)
+[EFX-0021 ERROR] Verific elaboration of module  'top' failed.
+[EFX-0007 VERI-ERROR] (F:/efinity_prj/2019_2/ram_pll_test-master/single_port_rom.v 33) cannot open file 'rom.inithex' (VERI-1012)
+[EFX-0021 ERROR] Verific elaboration of module  'top' failed.

@@ -1,15 +1,14 @@
 
 Efinity Interface Designer Report
-Version: 2018.4.285
-Date: 2019-03-20 10:19
+Version: 2019.2.192
+Date: 2020-01-31 10:03
 
-Copyright (C) 2017 - 2018 Efinix Inc. All rights reserved.
+Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
 
 Device: T20F256
 Project: ram_pll
 
-Package: 256-ball FBGA (preliminary)
-         NOTE: The package data is not final.
+Package: 256-ball FBGA (final)
 Timing Model: C3 (preliminary)
               NOTE: The timing data is not final
 
@@ -18,13 +17,14 @@ Timing Model: C3 (preliminary)
    2. Generated Output Files
    3. I/O Banks Summary
    4. Global Connection Summary
-   5. GPIO Usage Summary
-   6. PLL Usage Summary
-   7. LVDS Rx Usage Summary
-   8. LVDS Tx Usage Summary
-   9. Clock Mux Usage Summary
-   10. Configuration Control Usage Summary
-   11. JTAG Usage Summary
+   5. Clock Region Usage Summary
+   6. GPIO Usage Summary
+   7. PLL Usage Summary
+   8. LVDS Rx Usage Summary
+   9. LVDS Tx Usage Summary
+   10. Clock Mux Usage Summary
+   11. Configuration Control Usage Summary
+   12. JTAG Usage Summary
 ---------- Table of Contents (end) ------------
 
 ---------- 1. Periphery Usage Summary (begin) ----------
@@ -76,23 +76,40 @@ Verilog Template: ram_pll_template.v
 
 ---------- Global Connection Summary (end) ----------
 
----------- 5. GPIO Usage Summary (begin) ----------
+---------- 5. Clock Region Usage Summary (begin) ----------
+
++--------------+----------------+
+| Clock Region | Used/Available |
++--------------+----------------+
+|      B       |      0/16      |
+|      L0      |      0/4       |
+|      L1      |      0/4       |
+|      L2      |      0/4       |
+|      R0      |      0/4       |
+|      R1      |      0/4       |
+|      R2      |      0/4       |
+|      T       |      0/16      |
++--------------+----------------+
+
+---------- Clock Region Usage Summary (end) ----------
+
+---------- 6. GPIO Usage Summary (begin) ----------
 
 Global Unused Setting: input with weak pullup
 
-+---------------+-----------+--------+----------+----------+------------------+-------------+
-| Instance Name |  Resource |  Mode  | Register | I/O Bank |     Pad Name     | Package Pin |
-+---------------+-----------+--------+----------+----------+------------------+-------------+
-|    clk_pll    |  GPIOL_75 | input  |          |  1D_1E   | GPIOL_75_PLLIN1  |      E8     |
-|    led_o[0]   | GPIOR_104 | output |          | 3A_3B_3C | GPIOR_104_CDI25  |     D14     |
-|    led_o[1]   | GPIOR_105 | output |          | 3A_3B_3C | GPIOR_105_CDI24  |     E13     |
-|    led_o[2]   | GPIOR_117 | output |          | 3A_3B_3C | GPIOR_117_CTRL14 |     G13     |
-|    led_o[3]   | GPIOR_118 | output |          | 3A_3B_3C | GPIOR_118_CTRL13 |     F14     |
-|    led_o[4]   | GPIOR_153 | output |          |  3D_3E   |    GPIOR_153     |     N14     |
-|    led_o[5]   | GPIOR_154 | output |          |  3D_3E   |    GPIOR_154     |     N16     |
-|    led_o[6]   | GPIOR_155 | output |          |  3D_3E   |    GPIOR_155     |     P15     |
-|    led_o[7]   | GPIOR_156 | output |          |  3D_3E   |    GPIOR_156     |     M14     |
-+---------------+-----------+--------+----------+----------+------------------+-------------+
++---------------+-----------+--------+----------+--------------+----------+------------------+-------------+
+| Instance Name |  Resource |  Mode  | Register | Clock Region | I/O Bank |     Pad Name     | Package Pin |
++---------------+-----------+--------+----------+--------------+----------+------------------+-------------+
+|    clk_pll    |  GPIOL_75 | input  |          |              |  1D_1E   | GPIOL_75_PLLIN1  |      E8     |
+|    led_o[0]   | GPIOR_104 | output |          |              | 3A_3B_3C | GPIOR_104_CDI25  |     D14     |
+|    led_o[1]   | GPIOR_105 | output |          |              | 3A_3B_3C | GPIOR_105_CDI24  |     E13     |
+|    led_o[2]   | GPIOR_117 | output |          |              | 3A_3B_3C | GPIOR_117_CTRL14 |     G13     |
+|    led_o[3]   | GPIOR_118 | output |          |              | 3A_3B_3C | GPIOR_118_CTRL13 |     F14     |
+|    led_o[4]   | GPIOR_153 | output |          |              |  3D_3E   |    GPIOR_153     |     N14     |
+|    led_o[5]   | GPIOR_154 | output |          |              |  3D_3E   |    GPIOR_154     |     N16     |
+|    led_o[6]   | GPIOR_155 | output |          |              |  3D_3E   |    GPIOR_155     |     P15     |
+|    led_o[7]   | GPIOR_156 | output |          |              |  3D_3E   |    GPIOR_156     |     M14     |
++---------------+-----------+--------+----------+--------------+----------+------------------+-------------+
 
 
 Input GPIO Configuration:
@@ -122,13 +139,13 @@ Output GPIO Configuration:
 
 ---------- GPIO Usage Summary (end) ----------
 
----------- 6. PLL Usage Summary (begin) ----------
+---------- 7. PLL Usage Summary (begin) ----------
 
-+---------------+----------+----------------+-----------------+---------------+----------------+---------+---------+---------+
-| Instance Name | Resource | Ref Clock Mode | Reference Clock | Feedback Mode | Feedback Clock | Clkout0 | Clkout1 | Clkout2 |
-+---------------+----------+----------------+-----------------+---------------+----------------+---------+---------+---------+
-|   pll_inst1   | PLL_TL0  |    external    |     clk_pll     |    internal   |                |   clk   |         |         |
-+---------------+----------+----------------+-----------------+---------------+----------------+---------+---------+---------+
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+---------+---------+---------+
+| Instance Name | Resource | Clock Region | Ref Clock Mode | Reference Clock | Feedback Mode | Feedback Clock | Clkout0 | Clkout1 | Clkout2 |
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+---------+---------+---------+
+|   pll_inst1   | PLL_TL0  |              |    external    |     clk_pll     |    internal   |                |   clk   |         |         |
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+---------+---------+---------+
 
 Instance Name                 : pll_inst1
 Resource                      : PLL_TL0
@@ -170,19 +187,19 @@ SDC Constraints:
 
 ---------- PLL Usage Summary (end) ----------
 
----------- 7. LVDS Rx Usage Summary (begin) ----------
+---------- 8. LVDS Rx Usage Summary (begin) ----------
 
 No LVDS Rx was configured
 
 ---------- LVDS Rx Usage Summary (end) ----------
 
----------- 8. LVDS Tx Usage Summary (begin) ----------
+---------- 9. LVDS Tx Usage Summary (begin) ----------
 
 No LVDS Tx was configured
 
 ---------- LVDS Tx Usage Summary (end) ----------
 
----------- 9. Clock Mux Usage Summary (begin) ----------
+---------- 10. Clock Mux Usage Summary (begin) ----------
 
 +----------+-----------------+
 | Resource | Output Assigned |
@@ -222,13 +239,13 @@ O: Available input to mux output connection
 
 ---------- Clock Mux Usage Summary (end) ----------
 
----------- 10. Configuration Control Usage Summary (begin) ----------
+---------- 11. Configuration Control Usage Summary (begin) ----------
 
 No Configuration Control was configured
 
 ---------- Configuration Control Usage Summary (end) ----------
 
----------- 11. JTAG Usage Summary (begin) ----------
+---------- 12. JTAG Usage Summary (begin) ----------
 
 No JTAG was configured
 
