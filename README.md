@@ -9,7 +9,7 @@ This repo focus on introduction Efinix Trion Series FPGA Block RAM and PLL
 
 Efinix FPGA 的第一个低成本FPGA家族是 Trion :
 - you can register to access the documentation
-- we will provide the EVB and software for your evaluation. 
+- we will provide the EVB and software for your evaluation.
 - ...
 
 
@@ -19,10 +19,10 @@ Efinix FPGA 的第一个低成本FPGA家族是 Trion :
 - FPGA lower than 30mw
   - T4,T8      : 4K , 8K  pure soft logic fabric product
   - Package    : 5x5mm FBGA81, 55 GPIOs
-  - EVB        : 
-    - T8EVB with build in programmer, you only need PC with USB 
+  - EVB        :
+    - T8EVB with build in programmer, you only need PC with USB
     - T20EVB with build in programmer based on FTDI chip, you only need PC with USB
-- 
+-
 ```
 
 ## Software
@@ -44,7 +44,7 @@ Other features :
 
 - STEP1: install Efinity 2018.4 or other advanced version in Win or Ubuntu
 - STEP2: get ready of the T20F256EVB,  
-    - if you have same EVB with Efinix engieers, with the other words, it is easy to find the issue with same two boards when you need tech support. 
+    - if you have same EVB with Efinix engieers, with the other words, it is easy to find the issue with same two boards when you need tech support.
 
 - STEP3: download the total repository directory into Efinity project directory, for examples, C:\Efinity\2018.4\project\ram_pll_test
 
@@ -55,5 +55,9 @@ Other features :
 - you can study how to use the Efinity RAM and PLL when you want to transfer your previous project that based on other vendor FPGA
 
 
+## Update
+
+ -Jan-31-2020,  migrate from 2018.2 to 2019.2 Efinity by Ben Chen
+ 
 The code is from Ben Chen
 Project upload by Wisdom Zhang
