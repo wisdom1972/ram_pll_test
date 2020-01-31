@@ -39,8 +39,7 @@ Other features :
 
 - we use the Efinix T20F256 EVB
 
-- The Trion T20 BGA256 development board features:
-
+- The Trion T20 BGA256 development board features:  
 -- T20 FPGA  
 -- 8 user LEDs  
 -- 3 user pushbutton switches, 3 user DIP switches  
@@ -74,13 +73,13 @@ Other features :
 
 ## Project Verilog file list
 
--- clk_gen.v
--- dual_clock_fifo.v  
--- shift_reg.v  
--- simple_dual_port_ram.v  
--- single_port_rom.v  
--- **top.v**  
--- true_dual_port_ram.v
+- clk_gen.v
+- dual_clock_fifo.v  
+- shift_reg.v  
+- simple_dual_port_ram.v  
+- single_port_rom.v  
+- **top.v**  
+- true_dual_port_ram.v
 
 
 ## Update
