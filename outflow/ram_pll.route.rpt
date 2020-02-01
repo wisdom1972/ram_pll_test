@@ -1,12 +1,12 @@
 
 Efinix FPGA Placement and Routing.
-Version: 2019.2.192 
-Date: Fri Jan 31 10:05:25 2020
+Version: 2019.3.272.1.6 
+Date: Sat Feb  1 11:36:26 2020
 
 Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
  
 Family: Trion 
 Device: T20F256
 Top-level Entity Name: ram_pll
-Elapsed time for routing: 0 hours 0 minutes 14 seconds
-Elapsed time for entire flow: 0 hours 2 minutes 29 seconds
+Elapsed time for routing: 0 hours 0 minutes 15 seconds
+Elapsed time for entire flow: 0 hours 1 minutes 11 seconds

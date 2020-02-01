@@ -1,7 +1,7 @@
 
 Efinix FPGA Placement and Routing.
-Version: 2019.2.192 
-Date: Fri Jan 31 10:03:22 2020
+Version: 2019.3.272.1.6 
+Date: Sat Feb  1 11:35:37 2020
 
 Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
  
@@ -160,5 +160,5 @@ Multipliers: 0 / 36 (0.00%)
 
 ----------- Memory Block Information (end) ----------
 
-Elapsed time for packing: 0 hours 0 minutes 2 seconds
-Elapsed time for placement: 0 hours 1 minutes 50 seconds
+Elapsed time for packing: 0 hours 0 minutes 1 seconds
+Elapsed time for placement: 0 hours 0 minutes 41 seconds

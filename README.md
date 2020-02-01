@@ -45,9 +45,8 @@ Other features :
 
 ## Hardware
 
-- we use the Efinix T20F256 EVB
-
-- The Trion T20 BGA256 development board features:  
+- The Project is based on Efinix T20F256 EVB, its main features is as follows:  
+-- The Trion T20 BGA256 development board features:  
 -- T20 FPGA  
 -- 8 user LEDs  
 -- 3 user pushbutton switches, 3 user DIP switches  
@@ -90,10 +89,35 @@ Other features :
 - **top.v**  
 - true_dual_port_ram.v
 
+## Verilog parameter
 
+- 通过修改HALF_SEC的参数， 可以看到LED的灯显示移位速度的改变
+
+```verilog
+
+module top
+(
+  input clk,
+  input locked,
+  output [7:0] led_o
+);
+
+
+//parameter HALF_SEC   = 37500000;  	//real half second is 37500000
+//parameter HALF_SEC   = 18750000;// quad second is 18750000
+//parameter HALF_SEC   = 9375000;//quad second is 18750000
+parameter HALF_SEC   = 4687500;//Octal second is 4687500
+
+parameter ROM_DWIDTH = 8;
+parameter ROM_AWIDTH = 3;
+
+```
 ## Update
 
- -Jan-31-2020,  migrate from 2018.2 to 2019.2 Efinity by Ben Chen
+ - Jan-31-2020,  migrate from 2018.2 to 2019.2
+ - Feb-1-2020,  migrate from 2019.2 to 2019.3, certified
+
+  Efinity by Ben Chen
 
 ## Acknowledge
 

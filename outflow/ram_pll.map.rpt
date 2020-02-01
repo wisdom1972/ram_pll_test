@@ -1,36 +1,36 @@
 Synthesis report for project ram_pll
-Date : Jan 31 2020  10:2:23
+Date : Feb 1 2020  11:35:17
 Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
 Top-level Entity Name : top
 ### ### File List (begin) ### ### ###
-F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (verilog_2k)
-F:/efinity_prj/2019_2/ram_pll_test-master/shift_reg.v (verilog_2k)
-F:/efinity_prj/2019_2/ram_pll_test-master/simple_dual_port_ram.v (verilog_2k)
-F:/efinity_prj/2019_2/ram_pll_test-master/single_port_rom.v (verilog_2k)
-F:/efinity_prj/2019_2/ram_pll_test-master/top.v (verilog_2k)
-F:/efinity_prj/2019_2/ram_pll_test-master/true_dual_port_ram.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/shift_reg.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/simple_dual_port_ram.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/single_port_rom.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/top.v (verilog_2k)
+/home/wisdom/2019.3/project/ram_pll_test-master/true_dual_port_ram.v (verilog_2k)
 ### ### File List (end) ### ### ###
 
 ### ### Pre-optimizations and mapping (begin) ### ### ###
 "MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
-@ F:/efinity_prj/2019_2/ram_pll_test-master/simple_dual_port_ram.v (31)"
+@ /home/wisdom/2019.3/project/ram_pll_test-master/simple_dual_port_ram.v (31)"
 "MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
-@ F:/efinity_prj/2019_2/ram_pll_test-master/true_dual_port_ram.v (34)"
+@ /home/wisdom/2019.3/project/ram_pll_test-master/true_dual_port_ram.v (34)"
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i47
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i10
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i47
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i10
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_22/i9
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i9
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_22/i9
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i9
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i22
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i10
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i22
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i10
 FF|OPT : Flip-flop optimization by equivalence checking
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_47/i9
-@ "F:/efinity_prj/2019_2/ram_pll_test-master/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i9
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_47/i9
+@ "/home/wisdom/2019.3/project/ram_pll_test-master/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i9
 
 Mapping success.
 ### ### Mapping (end) ### ### ###
@@ -46,7 +46,7 @@ Enable signal <vcc>, number of controlling flip flops: 10500
 Enable signal <n10870>, number of controlling flip flops: 3
 Enable signal <dual_clock_fifo_wrapper/o_full_2>, number of controlling flip flops: 18
 Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_we_1P>, number of controlling flip flops: 9
-Enable signal <n612>, number of controlling flip flops: 18
+Enable signal <n609>, number of controlling flip flops: 18
 Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_re_1P>, number of controlling flip flops: 10
 Enable signal <ram_raddr[15]>, number of controlling flip flops: 2
 Enable signal <n21470>, number of controlling flip flops: 1
@@ -63,17 +63,41 @@ Enable signal <n21556>, number of controlling flip flops: 1
 Enable signal <n21588>, number of controlling flip flops: 1
 ### ### EFX FF CE enables (end) ### ### ###
 
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs     MULTs
+------------------------------------------------------------         ---        ----        ----      ----     -----
+top:top                                                       10572(113)      63(45)     203(57)    130(0)      0(0)
++single_port_rom(DATA_WIDTH=8,ADDR_WIDTH=3,RAM_INIT_FILE=...        0(0)        0(0)        0(0)      1(1)      0(0)
++shift_reg:shift_reg(D_WIDTH=8,TAPE=1300)                   10400(10400)        0(0)        0(0)      0(0)      0(0)
+                   +dual_clock_fifo_wrapper(ADDR_WIDTH=9)...       59(0)       18(0)       42(0)      1(0)      0(0)
+         +dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")...      59(59)      18(18)      42(42)      1(0)      0(0)
+  +inst_simple_dual_port_ram:simple_dual_port_ram                   0(0)        0(0)        0(0)      1(1)      0(0)
++true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIR...        0(0)        0(0)    104(104)  128(128)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+ Clock     Flip-Flops   Memory Ports    Multipliers
+ -----     ----------   ------------    -----------
+   clk          10572            259              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
 ### ### EFX Flow Options (begin) ### ### ###
 
 family : Trion
 device : T20F256
 project : ram_pll
 root : top
-I : F:/efinity_prj/2019_2/ram_pll_test-master
-output-dir : F:/efinity_prj/2019_2/ram_pll_test-master/outflow
-work-dir : F:/efinity_prj/2019_2/ram_pll_test-master/work_syn
-write-efx-verilog : F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.map.v
-binary-db : F:/efinity_prj/2019_2/ram_pll_test-master/ram_pll.vdb
+I : /home/wisdom/2019.3/project/ram_pll_test-master
+output-dir : /home/wisdom/2019.3/project/ram_pll_test-master/outflow
+work-dir : /home/wisdom/2019.3/project/ram_pll_test-master/work_syn
+write-efx-verilog : /home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.map.v
+binary-db : /home/wisdom/2019.3/project/ram_pll_test-master/ram_pll.vdb
 insert-ios : 0
 num_mult18 : -1
 num_ram_5k : -1
@@ -88,10 +112,13 @@ OUTPUT PORTS    : 	8
 
 EFX_ADD         : 	63
 EFX_LUT4        : 	203
+   1-2  Inputs  : 	48
+   3    Inputs  : 	64
+   4    Inputs  : 	91
 EFX_FF          : 	10572
 EFX_RAM_5K      : 	130
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
-Plain synthesis (without verilog dump and post-map checks) time : 10s
-Elapsed synthesis time : 22s
+Plain synthesis (without verilog dump and post-map checks) time : 9s
+Elapsed synthesis time : 15s

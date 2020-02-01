@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <efxpt:periphery design="ram_pll" device="T20F256" xmlns:efxpt="http://www.efinixinc.com/peri_device_db" xmlns:efxutil="http://www.efinixinc.com/peri_tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_device_db lpf.xsd">
   <!-- Efinity Logical Peripheral File -->
-  <!-- Version: 2019.2.192 -->
-  <!-- Date: 2020-01-31 10:03 -->
+  <!-- Version: 2019.3.272 -->
+  <!-- Date: 2020-02-01 11:35 -->
   <!-- Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved. -->
   <efxpt:sequence size="198">
     <efxpt:instance id="GPIOL_00" index="0" type="gpio"/>

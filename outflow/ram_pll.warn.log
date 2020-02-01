@@ -80,3 +80,30 @@
 [EFX-0008 VERI-WARNING] (F:/efinity_prj/2019_2/ram_pll_test-master/top.v 106) expression size 17 truncated to fit in target size 16 (VERI-1209)
 [EFX-0008 VERI-WARNING] (F:/efinity_prj/2019_2/ram_pll_test-master/top.v 120) input port 'din2[7]' remains unconnected for this instance (VDB-1053)
 [EFX-0654 WARNING] (F:/efinity_prj/2019_2/ram_pll_test-master/top.v 66) Breaking combinational loop on net 'empty' with driver instance 'dual_clock_fifo_wrapper/inst_dual_clock_fifo/i52'.
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 32) expression size 32 truncated to fit in target size 31 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 35) expression size 4 truncated to fit in target size 3 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/single_port_rom.v 30) net 'rom' does not have a driver (VDB-1002)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 107) expression size 17 truncated to fit in target size 16 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 121) input port 'din2[7]' remains unconnected for this instance (VDB-1053)
+[EFX-0266 WARNING] Module Instance 'dual_clock_fifo_wrapper' input pin tied to constant (i_we=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we1=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we2=0).
+[EFX-0654 WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 67) Breaking combinational loop on net 'empty' with driver instance 'dual_clock_fifo_wrapper/inst_dual_clock_fifo/i52'.
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 34) expression size 32 truncated to fit in target size 31 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 37) expression size 4 truncated to fit in target size 3 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/single_port_rom.v 30) net 'rom' does not have a driver (VDB-1002)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 109) expression size 17 truncated to fit in target size 16 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 123) input port 'din2[7]' remains unconnected for this instance (VDB-1053)
+[EFX-0266 WARNING] Module Instance 'dual_clock_fifo_wrapper' input pin tied to constant (i_we=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we1=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we2=0).
+[EFX-0654 WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 69) Breaking combinational loop on net 'empty' with driver instance 'dual_clock_fifo_wrapper/inst_dual_clock_fifo/i52'.
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 34) expression size 32 truncated to fit in target size 31 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 37) expression size 4 truncated to fit in target size 3 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/single_port_rom.v 30) net 'rom' does not have a driver (VDB-1002)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 109) expression size 17 truncated to fit in target size 16 (VERI-1209)
+[EFX-0008 VERI-WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 123) input port 'din2[7]' remains unconnected for this instance (VDB-1053)
+[EFX-0266 WARNING] Module Instance 'dual_clock_fifo_wrapper' input pin tied to constant (i_we=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we1=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we2=0).
+[EFX-0654 WARNING] (/home/wisdom/2019.3/project/ram_pll_test-master/top.v 69) Breaking combinational loop on net 'empty' with driver instance 'dual_clock_fifo_wrapper/inst_dual_clock_fifo/i52'.

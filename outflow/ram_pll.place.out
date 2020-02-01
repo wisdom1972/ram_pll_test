@@ -1,7 +1,7 @@
 
 Efinix FPGA Placement and Routing.
-Version: 2019.2.192 
-Compiled: Aug 21 2019.
+Version: 2019.3.272.1.6 
+Compiled: Jan 16 2020.
 
 Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
 
@@ -13,236 +13,192 @@ a free open source code under MIT license.
 Running Placement and Routing for Family "Trion", Device "T20F256" ...
 
 ***** Beginning stage netlist pre-processing ... *****
-Successfully Read in Verific binary Netlist dump file "F:/efinity_prj/2019_2/ram_pll_test-master/ram_pll.vdb".
+Successfully Read in Verific binary Netlist dump file "/home/wisdom/2019.3/project/ram_pll_test-master/ram_pll.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 8.01916 seconds.
-	VDB Netlist Checker took 8.019 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 66.72 MB, end = 66.728 MB, delta = 0.008 MB
-	VDB Netlist Checker peak virtual memory usage = 70.056 MB
-VDB Netlist Checker resident set memory usage: begin = 68.892 MB, end = 69.072 MB, delta = 0.18 MB
-	VDB Netlist Checker peak resident set memory usage = 71.92 MB
+VDB Netlist Checker took 4.90776 seconds.
+	VDB Netlist Checker took 4.91 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 197.42 MB, end = 197.42 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 85.896 MB, end = 85.896 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 536.868 MB
 ***** Ending VDB Netlist Checker ... *****
-Reading core interface constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv'.
-Successfully processed interface constraints file "F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv".
+Reading core interface constraints from '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.csv".
 Found 0 constant generator nets.
 Pass 0: Swept away 0 nets with no fanout.
 Pass 0: Swept away 0 blocks with no fanout.
 Swept away 0 nets and 0 blocks in total.
 Removed 0 LUT buffers.
-Successfully created VPR logical netlist from Verific binary DataBase file "F:/efinity_prj/2019_2/ram_pll_test-master/ram_pll.vdb".
-Netlist pre-processing took 9.14125 seconds.
-	Netlist pre-processing took 9.142 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 12.86 MB, end = 87.608 MB, delta = 74.748 MB
-	Netlist pre-processing peak virtual memory usage = 87.608 MB
-Netlist pre-processing resident set memory usage: begin = 16.792 MB, end = 89.212 MB, delta = 72.42 MB
-	Netlist pre-processing peak resident set memory usage = 89.216 MB
+Successfully created VPR logical netlist from Verific binary DataBase file "/home/wisdom/2019.3/project/ram_pll_test-master/ram_pll.vdb".
+Netlist pre-processing took 5.73532 seconds.
+	Netlist pre-processing took 5.73 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 142.312 MB, end = 221.688 MB, delta = 79.376 MB
+Netlist pre-processing resident set memory usage: begin = 30.612 MB, end = 110.656 MB, delta = 80.044 MB
+	Netlist pre-processing peak resident set memory usage = 536.868 MB
 ***** Ending stage netlist pre-processing *****
 ***** Beginning stage packing ... *****
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
-Generate proto netlist for file "F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto" took 0.024 seconds
-Creating IO constraints file 'F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.io_place'
-Packing took 2.2438 seconds.
-	Packing took 2.243 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 33.636 MB, end = 47.76 MB, delta = 14.124 MB
-	Packing peak virtual memory usage = 260.232 MB
-Packing resident set memory usage: begin = 36.724 MB, end = 50.292 MB, delta = 13.568 MB
-	Packing peak resident set memory usage = 258.48 MB
+Generate proto netlist for file "/home/wisdom/2019.3/project/ram_pll_test-master/work_pnr/ram_pll.net_proto" took 0.018094 seconds
+Creating IO constraints file '/home/wisdom/2019.3/project/ram_pll_test-master/work_pnr/ram_pll.io_place'
+Packing took 1.47101 seconds.
+	Packing took 1.47 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 221.688 MB, end = 389.824 MB, delta = 168.136 MB
+Packing resident set memory usage: begin = 110.656 MB, end = 279.004 MB, delta = 168.348 MB
+	Packing peak resident set memory usage = 536.868 MB
 ***** Ending stage packing *****
 ***** Beginning stage packed netlist loading ... *****
-Read proto netlist file F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto
-Read proto netlist for file "F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.net_proto" took 0.004 seconds
-Setup net and block data structure took 0.451 seconds
-Packed netlist loading took 0.482449 seconds.
-	Packed netlist loading took 0.481 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 45.832 MB, end = 202.4 MB, delta = 156.568 MB
-	Packed netlist loading peak virtual memory usage = 260.232 MB
-Packed netlist loading resident set memory usage: begin = 48.268 MB, end = 195.704 MB, delta = 147.436 MB
-	Packed netlist loading peak resident set memory usage = 258.48 MB
+Read proto netlist file /home/wisdom/2019.3/project/ram_pll_test-master/work_pnr/ram_pll.net_proto
+Read proto netlist for file "/home/wisdom/2019.3/project/ram_pll_test-master/work_pnr/ram_pll.net_proto" took 0.005131 seconds
+Setup net and block data structure took 0.2994 seconds
+Packed netlist loading took 0.314916 seconds.
+	Packed netlist loading took 0.32 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 389.824 MB, end = 389.824 MB, delta = 0 MB
+Packed netlist loading resident set memory usage: begin = 279.004 MB, end = 279.004 MB, delta = 0 MB
+	Packed netlist loading peak resident set memory usage = 536.868 MB
 ***** Ending stage packed netlist loading *****
 ***** Beginning stage pre-placement ... *****
 
 ***** Ending stage pre-placement *****
 
-SDC file 'F:/efinity_prj/2019_2/ram_pll_test-master/top.sdc' parsed successfully.
+SDC file '/home/wisdom/2019.3/project/ram_pll_test-master/top.sdc' parsed successfully.
 1 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
 
 ***** Beginning stage initial placement ... *****
-Reading core interface constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv'.
-Successfully processed interface constraints file "F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.interface.csv".
-Writing IO placement constraints to 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow\ram_pll.interface.io'.
+Reading core interface constraints from '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.csv".
+Writing IO placement constraints to '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.io'.
 
-Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow\ram_pll.interface.io'.
+Reading placement constraints from '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.interface.io'.
 
-Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/work_pnr\ram_pll.io_place'.
+Reading placement constraints from '/home/wisdom/2019.3/project/ram_pll_test-master/work_pnr/ram_pll.io_place'.
 The driver, locked, of control net, locked, should be placed at a dedicated control pad location.
 ***** Ending stage initial placement *****
 ***** Beginning stage placement ... *****
 memory map at hier_level memory(0)/mem_blk(0)
 mult map at hier_level mult(0)/mult_blk(0)
 Timer::BuildGraph: ============ Cutting edge BACK edge from LUT__32612:I[0] to LUT__32664:O
-Placing core ...
-HPWL after global placement: 88345
-Legalizing ... 
-HPWL after legalize: 88080
-Starting annealer
+Starting Global Placer ...
 
  ----------     -------  --------------     -------
-  Iteration     BB Cost  Delay Max (ps)     R Limit
+  Iteration       WHPWL  Delay Max (ps) Convergence
  ----------     -------  --------------     -------
-          0       37599           12788        30.0
-          1      136302           13170        30.0
-          2      497125           13170        30.0
-          3      788394           12568        30.0
-          4      910376           12568        30.0
-          5      976092           10092        30.0
-          6      994980            9843        30.0
-          7      971988            9557        30.0
-          8      930835            8768        30.0
-          9      865246            8926        30.0
-         10      797263            8568        30.0
-         11      755121            8372        30.0
-         12      720074            8140        30.0
-         13      677533            7893        30.0
-         14      640844            7334        30.0
-         15      607440            7846        30.0
-         16      572475            7532        30.0
-         17      538564            7771        30.0
-         18      513964            7771        30.0
-         19      498897            7532        30.0
-         20      482918            7449        30.0
-         21      461457            7807        30.0
-         22      439834            7285        30.0
-         23      425722            7532        30.0
-         24      418815            7218        30.0
-         25      413369            7497        30.0
-         26      408152            7497        30.0
-         27      395644            7532        30.0
-         28      382534            7621        30.0
-         29      376496            7890        30.0
-         30      373352            7890        30.0
-         31      374027            7657        30.0
-         32      370813            7106        30.0
-         33      369949            7182        30.0
-         34      365588            7096        30.0
-         35      357166            7096        30.0
-         36      347996            7094        30.0
-         37      341755            7037        30.0
-         38      338880            7037        30.0
-         39      334686            7037        30.0
-         40      326544            6968        30.0
-         41      318783            6968        30.0
-         42      315440            6915        30.0
-         43      311354            6915        30.0
-         44      306165            6915        30.0
-         45      301724            6915        30.0
-         46      294729            6915        30.0
-         47      287804            7094        30.0
-         48      282675            7094        30.0
-         49      278455            6879        30.0
-         50      273073            6879        30.0
-         51      268908            6879        30.0
-         52      266608            6868        30.0
-         53      259859            6760        30.0
-         54      252902            6760        30.0
-         55      247690            6760        30.0
-         56      244434            6760        30.0
-         57      239174            7037        30.0
-         58      230113            7037        30.0
-         59      223924            7037        30.0
-         60      220180            6820        30.0
-         61      215652            6879        30.0
-         62      208515            6879        30.0
-         63      202143            6896        30.0
-         64      195682            7181        30.0
-         65      191663            6643        30.0
-         66      186822            6622        30.0
-         67      180604            6613        30.0
-         68      176397            6613        30.0
-         69      171324            6613        30.0
-         70      165647            6613        30.0
-         71      160119            6613        30.0
-         72      155221            6598        30.0
-         73      150915            6417        30.0
-         74      146376            6642        30.0
-         75      141404            7057        30.0
-         76      136069            7057        30.0
-         77      131899            6598        30.0
-         78      128354            6598        30.0
-         79      124084            6863        30.0
-         80      120785            6863        30.0
-         81      116143            6429        30.0
-         82      112304            6679        30.0
-         83      108924            6658        30.0
-         84      104939            6658        30.0
-         85      100714            6739        30.0
-         86       97982            6593        30.0
-         87       95099            6635        30.0
-         88       91528            6635        30.0
-         89       88469            6510        30.0
-         90       85664            6473        30.0
-         91       83588            6473        30.0
-         92       81729            6712        30.0
-         93       79793            6606        30.0
-         94       77046            6473        30.0
-         95       74907            6598        30.0
-         96       73657            6642        30.0
-         97       70795            6592        30.0
-         98       68827            6585        30.0
-         99       67358            6592        29.9
-        100       66398            6592        29.6
-        101       64327            6548        29.2
-        102       61940            6548        28.8
-        103       60654            6585        28.3
-        104       59838            6585        27.6
-        105       58176            6367        26.9
-        106       57205            6583        26.1
-        107       56352            6367        25.3
-        108       55238            6367        24.6
-        109       53767            6423        23.7
-        110       52797            6423        22.9
-        111       51667            6423        22.1
-        112       50732            6423        21.3
-        113       49858            6548        20.6
-        114       49400            6636        19.8
-        115       49110            6905        18.9
-        116       48005            6548        18.2
-        117       47438            6585        17.5
-        118       46313            6585        16.9
-        119       45153            6609        16.1
-        120       45062            6571        15.4
-        121       44533            6867        14.9
-        122       43698            6585        14.3
-        123       43345            6585        13.7
-        124       42883            6585        13.1
-        125       42187            6548        12.7
-        126       41907            6548        12.1
-        127       41183            6585        11.6
-        128       40313            6585        11.1
-        129       40012            6548        10.6
-        130       39919            6548        10.2
-        131       39223            6585         9.7
-        132       38951            6585         9.3
-        133       38640            6548         8.9
-        134       38501            6548         8.6
-        135       38488            6585         8.2
-        136       38103            6585         7.9
-        137       37675            6548         7.5
-        138       37202            6548         6.9
-HPWL after detailed placement: 100634
+          1      252219          -13929         0.4%
+          2       94488          -16323         3.4%
+          3       58741          -17304         8.8%
+          4       46093          -17827        12.4%
+          5       42631          -18090        17.2%
+          6       37088          -18325        34.9%
+          7       35964          -18687        53.0%
+          8       35653          -18352        55.9%
+          9       35403          -18776        56.6%
+         10       35044          -18148        57.6%
+         11       34655          -18741        58.5%
+         12       34498          -18621        59.3%
+         13       34231          -18743        60.6%
+         14       34130          -18732        61.3%
+         15       34072          -18610        62.4%
+         16       33846          -18334        64.2%
+         17       33497          -18630        65.9%
+         18       33310          -18189        67.8%
+         19       33031          -18385        69.9%
+         20       32838          -18452        71.9%
+         21       32692          -18148        74.2%
+         22       32523          -18196        76.4%
+         23       32376          -18810        77.8%
+         24       32223          -18477        78.8%
+         25       32138          -18714        79.8%
+         26       32140          -18477        80.8%
+         27       32111          -18574        82.8%
+         28       32118          -18601        84.5%
+         29       32084          -18601        85.0%
+         30       32039          -18599        85.5%
+         31       31963          -18601        85.8%
+         32       31953          -18307        86.1%
+         33       31956          -18518        86.7%
+         34       31920          -18518        87.4%
+         35       31878          -18518        90.5%
+         36       31864          -18518        91.2%
+         37       31838          -18518        91.9%
+         38       31820          -18780        92.6%
+         39       31869          -18780        93.7%
+         40       31851          -18438        94.3%
+         41       31866          -18438        94.7%
+         42       31886          -18438        98.7%
+         43       31841          -18642        99.6%
+         44       31843          -18508        99.9%
+         45       31845          -18780       100.0%
+         46       31856          -18780       100.0%
+         47       31883          -18780       100.0%
+         48       31910          -18780       100.0%
+         49       31901          -18780       100.0%
+Starting Legalization ... 
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0       31841            8029        30.0
+          1       44111            8414        30.0
+          2       57765            8119        28.8
+          3       62368            8709        28.4
+          4       64025            8183        28.5
+          5       63446            7991        28.6
+          6       62401            7846        28.6
+          7       61410            7970        28.5
+          8       60315            7970        28.4
+          9       58414            7550        28.0
+         10       56194            7202        27.5
+         11       55151            7810        26.9
+         12       54216            7271        26.4
+         13       52953            7304        25.8
+         14       51232            7304        25.1
+         15       49572            7304        24.4
+         16       48648            7304        23.7
+         17       47737            6888        22.9
+         18       46762            6936        22.2
+         19       45698            7222        21.4
+         20       44278            7286        20.7
+         21       43568            6939        19.9
+         22       42891            7309        19.1
+         23       42098            6930        18.4
+         24       41335            7166        17.7
+         25       40407            7021        16.9
+         26       39433            7021        16.1
+         27       38659            7318        15.4
+         28       38220            6781        14.9
+         29       37074            6781        14.4
+         30       36531            6537        13.8
+         31       36092            6889        13.1
+         32       35673            6563        12.6
+         33       34883            7128        12.0
+         34       34356            6662        11.5
+         35       33889            6620        11.0
+         36       33367            6637        10.6
+         37       33010            6637        10.1
+         38       32514            6635         9.6
+         39       32187            6675         9.1
+         40       31940            6624         8.8
+         41       31818            6817         8.4
+         42       31413            6387         8.1
+         43       31158            6635         7.7
+         44       30581            6635         7.3
+         45       30205            6549         7.1
+         46       29383            6610         6.8
+         47       28849            6602         6.2
 Placement successful: 10887 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0999312 at 111,81
+Congestion-weighted HPWL per net: 2.57041
 
-Reading placement constraints from 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.qplace'.
-Finish Realign Types (42 blocks need type change)
+Reading placement constraints from '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.qplace'.
+Finish Realign Types (20 blocks need type change)
 
 Completed placement consistency check successfully.
 
-Placement estimated critical path delay: 6.68986 ns
-Successfully created FPGA place file 'F:/efinity_prj/2019_2/ram_pll_test-master/outflow/ram_pll.place'
-Placement took 110.497 seconds.
-	Placement took 110.496 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 204.104 MB, end = 279.744 MB, delta = 75.64 MB
-	Placement peak virtual memory usage = 520.156 MB
-Placement resident set memory usage: begin = 197.84 MB, end = 275.356 MB, delta = 77.516 MB
-	Placement peak resident set memory usage = 512.328 MB
+Placement estimated critical path delay: 6.44681 ns
+Successfully created FPGA place file '/home/wisdom/2019.3/project/ram_pll_test-master/outflow/ram_pll.place'
+Placement took 41.1679 seconds.
+	Placement took 41.17 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 389.824 MB, end = 1051.41 MB, delta = 661.588 MB
+Placement resident set memory usage: begin = 279.004 MB, end = 384.128 MB, delta = 105.124 MB
+	Placement peak resident set memory usage = 536.868 MB
 ***** Ending stage placement *****

@@ -17,7 +17,11 @@ module top
 );
 
 
-parameter HALF_SEC   = 37500000;
+//parameter HALF_SEC   = 37500000;  	//real half second is 37500000
+//parameter HALF_SEC   = 18750000;// quad second is 18750000
+//parameter HALF_SEC   = 9375000;//quad second is 18750000
+parameter HALF_SEC   = 4687500;//Octal second is 4687500
+
 parameter ROM_DWIDTH = 8;
 parameter ROM_AWIDTH = 3;
 
