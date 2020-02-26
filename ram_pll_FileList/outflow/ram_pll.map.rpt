@@ -1,0 +1,119 @@
+Synthesis report for project ram_pll
+Date : Feb 26 2020  8:27:54
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+Top-level Entity Name : top
+### ### File List (begin) ### ### ###
+(f command argument) /home/wisdom/2019.3/project/ram_pll_FileList/filelist.f
+### ### File List (end) ### ### ###
+
+### ### Pre-optimizations and mapping (begin) ### ### ###
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ /home/wisdom/2019.3/project/ram_pll_FileList/simple_dual_port_ram.v (31)"
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ /home/wisdom/2019.3/project/ram_pll_FileList/true_dual_port_ram.v (34)"
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i47
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_22/i9
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i9
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (279)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/i22
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (279)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_20/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (341)" removed instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_47/i9
+@ "/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v (341)" representative instance : dual_clock_fifo_wrapper/inst_dual_clock_fifo/dff_45/i9
+
+Mapping success.
+### ### Mapping (end) ### ### ###
+
+### ### Post-optimizations and re-synthesis (begin) ### ### ###
+
+Post-optimizations and re-synthesis success.
+### ### Post-optimizations and re-synthesis (end) ### ### ###
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 19
+Enable signal <vcc>, number of controlling flip flops: 10500
+Enable signal <n10894>, number of controlling flip flops: 8
+Enable signal <dual_clock_fifo_wrapper/o_full_2>, number of controlling flip flops: 18
+Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_we_1P>, number of controlling flip flops: 9
+Enable signal <n613>, number of controlling flip flops: 18
+Enable signal <dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_re_1P>, number of controlling flip flops: 10
+Enable signal <ram_raddr[15]>, number of controlling flip flops: 2
+Enable signal <n21494>, number of controlling flip flops: 1
+Enable signal <n21499>, number of controlling flip flops: 1
+Enable signal <n21509>, number of controlling flip flops: 1
+Enable signal <n21512>, number of controlling flip flops: 1
+Enable signal <n21515>, number of controlling flip flops: 1
+Enable signal <n21520>, number of controlling flip flops: 1
+Enable signal <n21544>, number of controlling flip flops: 1
+Enable signal <n21555>, number of controlling flip flops: 1
+Enable signal <n21561>, number of controlling flip flops: 1
+Enable signal <n21579>, number of controlling flip flops: 1
+Enable signal <n21586>, number of controlling flip flops: 1
+Enable signal <n21618>, number of controlling flip flops: 1
+### ### EFX FF CE enables (end) ### ### ###
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs     MULTs
+------------------------------------------------------------         ---        ----        ----      ----     -----
+top:top                                                       10577(118)      70(52)     201(55)    130(0)      0(0)
+  +single_port_rom(DATA_WIDTH=8,RAM_INIT_FILE="init.mem")...        0(0)        0(0)        0(0)      1(1)      0(0)
++shift_reg:shift_reg(D_WIDTH=8,TAPE=1300)                   10400(10400)        0(0)        0(0)      0(0)      0(0)
+                   +dual_clock_fifo_wrapper(ADDR_WIDTH=9)...       59(0)       18(0)       42(0)      1(0)      0(0)
+         +dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")...      59(59)      18(18)      42(42)      1(0)      0(0)
+  +inst_simple_dual_port_ram:simple_dual_port_ram                   0(0)        0(0)        0(0)      1(1)      0(0)
++true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIR...        0(0)        0(0)    104(104)  128(128)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+ Clock     Flip-Flops   Memory Ports    Multipliers
+ -----     ----------   ------------    -----------
+   clk          10577            259              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20F256
+project : ram_pll
+root : top
+I : /home/wisdom/2019.3/project/ram_pll_FileList
+output-dir : /home/wisdom/2019.3/project/ram_pll_FileList/outflow
+work-dir : /home/wisdom/2019.3/project/ram_pll_FileList/work_syn
+write-efx-verilog : /home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.map.v
+binary-db : /home/wisdom/2019.3/project/ram_pll_FileList/ram_pll.vdb
+insert-ios : 0
+num_mult18 : -1
+num_ram_5k : -1
+syn_options : mode=speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	2
+OUTPUT PORTS    : 	8
+
+EFX_ADD         : 	70
+EFX_LUT4        : 	201
+   1-2  Inputs  : 	47
+   3    Inputs  : 	63
+   4    Inputs  : 	91
+EFX_FF          : 	10577
+EFX_RAM_5K      : 	130
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 10s
+Elapsed synthesis time : 17s

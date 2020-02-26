@@ -1,0 +1,255 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2019.3.272.3.4
+[EFX-0000 INFO] Compiled: Dec  9 2019.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+INFO: ***** Beginning Analysis ... *****
+-- Parsing command file /home/wisdom/2019.3/project/ram_pll_FileList/filelist.f (VERI-1482)
+INFO: The default VHDL library search path is now "/home/wisdom/2019.3/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file '/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/simple_dual_port_ram.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/shift_reg.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/single_port_rom.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/top.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/true_dual_port_ram.v' (VERI-1482)
+INFO: Analysis took 0.147371 seconds.
+INFO: 	Analysis took 0.15 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 158.776 MB, end = 159.436 MB, delta = 0.66 MB
+INFO: Analysis resident set memory usage: begin = 39.408 MB, end = 41.9 MB, delta = 2.492 MB
+INFO: 	Analysis peak resident set memory usage = 500.956 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+/home/wisdom/2019.3/project/ram_pll_FileList/top.v(12): INFO: compiling module 'top' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/top.v(31): WARNING: expression size 32 truncated to fit in target size 31 (VERI-1209)
+/home/wisdom/2019.3/project/ram_pll_FileList/top.v(34): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+/home/wisdom/2019.3/project/ram_pll_FileList/single_port_rom.v(13): INFO: compiling module 'single_port_rom(DATA_WIDTH=8,RAM_INIT_FILE="init.mem")' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/single_port_rom.v(33): WARNING: entry size 12 at init.mem:0 does not match memory width 8 (VERI-2474)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+WARNING: literal value truncated to fit in 8 bits (VERI-1208)
+/home/wisdom/2019.3/project/ram_pll_FileList/single_port_rom.v(30): WARNING: net 'rom' does not have a driver (VDB-1002)
+/home/wisdom/2019.3/project/ram_pll_FileList/shift_reg.v(1): INFO: compiling module 'shift_reg(D_WIDTH=8,TAPE=1300)' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v(12): INFO: compiling module 'dual_clock_fifo_wrapper(ADDR_WIDTH=9)' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/dual_clock_fifo.v(163): INFO: compiling module 'dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/simple_dual_port_ram.v(14): INFO: compiling module 'simple_dual_port_ram' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/top.v(106): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+/home/wisdom/2019.3/project/ram_pll_FileList/true_dual_port_ram.v(14): INFO: compiling module 'true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIRST",WRITE_MODE_2="WRITE_FIRST",RAM_INIT_FILE="")' (VERI-1018)
+/home/wisdom/2019.3/project/ram_pll_FileList/top.v(120): WARNING: input port 'din2[7]' remains unconnected for this instance (VDB-1053)
+INFO: Elaboration took 0.813238 seconds.
+INFO: 	Elaboration took 0.81 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 159.436 MB, end = 175.58 MB, delta = 16.144 MB
+INFO: Elaboration resident set memory usage: begin = 41.9 MB, end = 59.464 MB, delta = 17.564 MB
+INFO: 	Elaboration peak resident set memory usage = 500.956 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file '/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(45): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(59): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(75): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(95): INFO: compiling module 'EFX_MULT' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(130): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(367): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(429): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+INFO: Reading Mapping Library took 0.00808971 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 175.58 MB, end = 175.58 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 59.464 MB, end = 59.464 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 500.956 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0266 WARNING] Module Instance 'dual_clock_fifo_wrapper' input pin tied to constant (i_we=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we1=1).
+[EFX-0266 WARNING] Module Instance 'true_dual_port_ram' input pin tied to constant (we2=0).
+[EFX-0677 INFO] (/home/wisdom/2019.3/project/ram_pll_FileList/simple_dual_port_ram.v 31) Zero initialization of uninitialized memory block 'ram'.
+[EFX-0677 INFO] (/home/wisdom/2019.3/project/ram_pll_FileList/true_dual_port_ram.v 34) Zero initialization of uninitialized memory block 'ram'.
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Mapping design "top"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "single_port_rom(DATA_WIDTH=8,RAM_INIT_FILE="init.mem")" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: rom
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "single_port_rom(DATA_WIDTH=8,RAM_INIT_FILE="init.mem")" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "shift_reg(D_WIDTH=8,TAPE=1300)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "shift_reg(D_WIDTH=8,TAPE=1300)" end (Real time : 1s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: ram
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dual_clock_fifo(ADDR_WIDTH=9,OUTPUT_REG="TRUE")" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dual_clock_fifo_wrapper(ADDR_WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dual_clock_fifo_wrapper(ADDR_WIDTH=9)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIRST",WRITE_MODE_2="WRITE_FIRST",RAM_INIT_FILE="")" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: ram
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "true_dual_port_ram(ADDR_WIDTH=16,WRITE_MODE_1="WRITE_FIRST",WRITE_MODE_2="WRITE_FIRST",RAM_INIT_FILE="")" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top" end (Real time : 3s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 1s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0654 WARNING] (/home/wisdom/2019.3/project/ram_pll_FileList/top.v 66) Breaking combinational loop on net 'empty' with driver instance 'dual_clock_fifo_wrapper/inst_dual_clock_fifo/i52'.
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis begin
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 201, ed: 647, lv: 4
+[EFX-0000 INFO] ... LUT mapping end (Real time : 2s CPU user time : 7s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 2s CPU user time : 9s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis end (Real time : 4s CPU user time : 9s CPU sys time : 0s MEM : 500956KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 9s CPU sys time : 0s MEM : 500956KB)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+INFO: VDB Netlist Checker took 4.95426 seconds.
+INFO: 	VDB Netlist Checker took 4.96 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 268.608 MB, end = 268.608 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 158.008 MB, end = 158.008 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 500.956 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'top' to Verilog file '/home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	70
+[EFX-0000 INFO] EFX_LUT4        : 	201
+[EFX-0000 INFO] EFX_FF          : 	10577
+[EFX-0000 INFO] EFX_RAM_5K      : 	130
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
+[EFX-0000 INFO] =============================== 

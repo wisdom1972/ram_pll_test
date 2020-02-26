@@ -1,0 +1,110 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.3.4 
+Compiled: Feb  4 2020.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F256" ...
+
+***** Beginning stage routing graph generation ... *****
+Finished parsing ipin pattern file '/home/wisdom/2019.3/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/wisdom/2019.3/arch/./sb_connectivity_subset.xdb'.
+Generated 1171177 RR nodes and 4452977 RR edges
+This design has 0 global control net(s). See /home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.route.rpt for details.
+Routing graph took 3.96869 seconds.
+	Routing graph took 3.96 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 1036.12 MB, end = 1382.62 MB, delta = 346.496 MB
+Routing graph resident set memory usage: begin = 381.124 MB, end = 727.58 MB, delta = 346.456 MB
+	Routing graph peak resident set memory usage = 727.58 MB
+***** Ending stage routing graph generation *****
+***** Beginning stage routing ... *****
+Peak routing utilization for Horizontal Left: 0.279910 at (79,77)
+Peak routing utilization for Horizontal Right: 0.199748 at (90,99)
+Peak routing utilization for Vertical Down: 0.528247 at (143,116)
+Peak routing utilization for Vertical Up: 0.339347 at (82,81)
+Peak routing congestion: 0.142880 at (87,73)
+V Congestion RMS: 0.070451 STDEV: 0.020363
+H Congestion RMS: 0.057244 STDEV: 0.013601
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+Routed wire in iteration 1: 507996
+Delay frac statistics: min = 0.246877 max = 1.947348 average = 0.605901
+         1        13065              5.748               7.72
+Routed wire in iteration 2: 289478
+         2          616              5.684               3.25
+Routed wire in iteration 3: 299666
+         3          185              5.615                1.7
+Routed wire in iteration 4: 299841
+         4           65              5.615              0.807
+Routed wire in iteration 5: 300181
+         5           27              5.615              0.772
+Routed wire in iteration 6: 300337
+         6           12              5.668              0.672
+Routed wire in iteration 7: 300301
+         7            7              6.144              0.662
+Routed wire in iteration 8: 300313
+         8            3               6.06              0.665
+Routed wire in iteration 9: 300369
+         9            2               6.06              0.663
+Routed wire in iteration 10: 300333
+        10            0              6.104              0.663
+
+Successfully routed netlist after 10 routing iterations and 52667290 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+Serial number (magic cookie) for the routing is: 1500277956
+Netlist fully routed.
+
+Successfully created FPGA route file '/home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.route'
+Routing took 19.5229 seconds.
+	Routing took 19.52 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1382.62 MB, end = 1448.79 MB, delta = 66.172 MB
+Routing resident set memory usage: begin = 727.58 MB, end = 788.9 MB, delta = 61.32 MB
+	Routing peak resident set memory usage = 854.904 MB
+***** Ending stage routing *****
+***** Beginning stage final timing analysis ... *****
+WARNING(1): Found combinational cycle from timing node 221025 to 221026
+WARNING(2): 	Cutting timing edge on block pin LUT__32717.in[3]
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+clk                 6.224         160.659     (R-R)
+
+Geomean max period: 6.224
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+clk              clk                   1.000        -5.224     (R-R)
+
+
+final timing analysis took 1.01018 seconds.
+	final timing analysis took 1 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1448.79 MB, end = 1448.79 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 788.9 MB, end = 788.9 MB, delta = 0 MB
+	final timing analysis peak resident set memory usage = 854.904 MB
+***** Ending stage final timing analysis *****
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from '/home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/ram_pll_FileList/outflow/ram_pll.interface.csv".
+Finished writing bitstream file /home/wisdom/2019.3/project/ram_pll_FileList/work_pnr/ram_pll.lbf.
+Bitstream generation took 0.842225 seconds.
+	Bitstream generation took 0.85 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1448.79 MB, end = 1452.92 MB, delta = 4.128 MB
+Bitstream generation resident set memory usage: begin = 788.9 MB, end = 792.344 MB, delta = 3.444 MB
+	Bitstream generation peak resident set memory usage = 854.904 MB
+***** Ending stage bitstream generation *****
+The entire flow of EFX_PNR took 77.5658 seconds.
+	The entire flow of EFX_PNR took 77.56 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 133.744 MB, end = 1288.22 MB, delta = 1154.48 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 16.592 MB, end = 627.864 MB, delta = 611.272 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 854.904 MB

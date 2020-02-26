@@ -1,0 +1,224 @@
+
+Efinix Static Timing Analysis Report
+Version: 2019.3.272.3.4 
+Date: Wed Feb 26 08:29:35 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Top-level Entity Name: ram_pll
+
+SDC Filename: Not Specified
+
+Timing Model: C4
+	temperature : 0C to 85C
+	voltage : 1.2V +/-50mV
+	speedgrade : 4
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary 
+   2. Clock Relationship Summary 
+   3. Path Details for Max Critical Paths 
+   4. Path Details for Min Critical Paths 
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+Clock Name      Period (ns)   Frequency (MHz)   Waveform   Source Clock Name
+clk                 1.000        1000.000         {0.000 0.500}        clk
+
+Maximum possible analyzed clocks frequency
+Clock Name      Period (ns)   Frequency (MHz)   Edge
+clk                 6.224         160.659     (R-R)
+
+Geomean max period: 6.224
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+clk              clk                   1.000        -5.224     (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (clk vs clk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_2P[6]~FF|CLK
+Path End      : dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FF|D
+Launch Clock  : clk (RISE)
+Capture Clock : clk (RISE)
+Slack         : -5.224  (required time - arrival time)
+Delay         : 5.705
+
+Logic Level : 6
+Non-global nets on path : 6
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 6.104
+--------------------------------------------
+End-of-path arrival time       : 10.214
+
+Constraint                     : 1
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 4.99
+
+
+Launch Clock Path
+pin name                                                              model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================================================================
+ clk                                                                   inpad               0                      0           2          (0,118)
+ clk                                                                   inpad             0.2                    0.2           2          (0,118)
+ clk                                                                   io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                       gbuf_block       0.32                   0.52           2          (1,118)
+ CLKBUF__0|I                                                           gbuf             3.59                   4.11           2          (1,118)
+ CLKBUF__0|O                                                           gbuf                0                   4.11       10837          (1,118)
+ CLKBUF__0|clkout                                                      gbuf_block          0                   4.11       10837          (1,118)
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_2P[6]~FF|CLK    ff                  0                   4.11       10837          (79,67)
+
+Data Path
+pin name                                                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================================================
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_2P[6]~FF|Q        ff               0.282                  0.282           2          (79,67)
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_waddrg_2P[6]~FF|O_seq    eft              0.777                  1.059           2          (79,67)
+   Routing elements:  
+     Manhattan distance of X:2, Y:0
+ LUT__32659|I[0]                                                         eft              0.267                  1.326           2          (81,67)
+ LUT__32659|in[0]                                                        lut                  0                  1.326           2          (81,67)
+ LUT__32659|out                                                          lut                  0                  1.326           2          (81,67)
+ LUT__32659|O                                                            eft               0.37                  1.696           2          (81,67)
+   Routing elements:  
+     Manhattan distance of X:0, Y:5
+ LUT__32663|I[1]                                                         eft              0.223                  1.919           2          (81,62)
+ LUT__32663|in[1]                                                        lut                  0                  1.919           2          (81,62)
+ LUT__32663|out                                                          lut                  0                  1.919           2          (81,62)
+ LUT__32663|O                                                            eft              0.431                  2.351           2          (81,62)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ LUT__32664|I[0]                                                         efl              0.251                  2.601           2          (82,62)
+ LUT__32664|in[0]                                                        lut                  0                  2.601           2          (82,62)
+ LUT__32664|out                                                          lut                  0                  2.601           3          (82,62)
+ LUT__32664|O                                                            efl              0.808                  3.409           3          (82,62)
+   Routing elements:  
+     Manhattan distance of X:0, Y:19
+ LUT__32717|I[1]                                                         efl              0.222                  3.632           3          (82,81)
+ LUT__32717|in[1]                                                        lut                  0                  3.632           3          (82,81)
+ LUT__32717|out                                                          lut                  0                  3.632          22          (82,81)
+ LUT__32717|O                                                            efl              1.194                  4.826          22          (82,81)
+   Routing elements:  
+     Manhattan distance of X:2, Y:1
+ LUT__32665|I[1]                                                         efl              0.222                  5.048          22          (80,82)
+ LUT__32665|in[1]                                                        lut                  0                  5.049          22          (80,82)
+ LUT__32665|out                                                          lut                  0                  5.049           3          (80,82)
+ LUT__32665|O                                                            efl              0.777                  5.826           3          (80,82)
+   Routing elements:  
+     Manhattan distance of X:1, Y:2
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FF|I[2]         eft              0.161                  5.987           3          (81,80)
+ LUT__32666|in[2]                                                        lut                  0                  5.987           3          (81,80)
+ LUT__32666|out                                                          lut                  0                  5.987           2          (81,80)
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FF|D            ff               0.118                  6.104           2          (81,80)
+
+Capture Clock Path
+pin name                                                          model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=============================================================================================================================================
+ clk                                                               inpad               0                      0           2          (0,118)
+ clk                                                               inpad             0.2                    0.2           2          (0,118)
+ clk                                                               io                  0                    0.2           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                   gbuf_block       0.32                   0.52           2          (1,118)
+ CLKBUF__0|I                                                       gbuf             3.59                   4.11           2          (1,118)
+ CLKBUF__0|O                                                       gbuf                0                   4.11       10837          (1,118)
+ CLKBUF__0|clkout                                                  gbuf_block          0                   4.11       10837          (1,118)
+ dual_clock_fifo_wrapper/inst_dual_clock_fifo/r_empty[0]~FF|CLK    ff                  0                   4.11       10837          (81,80)
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (clk vs clk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : ram_waddr[0]~FF|CLK
+Path End      : true_dual_port_ram/ram__15_8(11)__14_8(00)__13_8(11)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_1(10)|WADDR[8]
+Launch Clock  : clk (RISE)
+Capture Clock : clk (RISE)
+Slack         : 0.086  (arrival time - required time)
+Delay         : 0.17
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.146
+--------------------------------------------
+End-of-path arrival time       : 2.201
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name               model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==================================================================================================
+ clk                    inpad               0                      0           2          (0,118)
+ clk                    inpad             0.1                    0.1           2          (0,118)
+ clk                    io                  0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in        gbuf_block       0.16                   0.26           2          (1,118)
+ CLKBUF__0|I            gbuf            1.795                  2.055           2          (1,118)
+ CLKBUF__0|O            gbuf                0                  2.055       10837          (1,118)
+ CLKBUF__0|clkout       gbuf_block          0                  2.055       10837          (1,118)
+ ram_waddr[0]~FF|CLK    ff                  0                  2.055       10837          (81,18)
+
+Data Path
+pin name                                                                                                                     model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================================================================
+ ram_waddr[0]~FF|Q                                                                                                            ff                0.141                  0.141         132          (81,18)
+ ram_waddr[0]~FF|O_seq                                                                                                        eft                0.17                  0.311         132          (81,18)
+   Routing elements:  
+     Manhattan distance of X:4, Y:16
+ true_dual_port_ram/ram__15_8(11)__14_8(00)__13_8(11)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_1(10)|WADDR[8]    ram_4096x20      -0.165                  0.146         132          (85,2)
+
+Capture Clock Path
+pin name                                                                                                                 model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================================================================================
+ clk                                                                                                                      inpad                0                      0           2          (0,118)
+ clk                                                                                                                      inpad              0.1                    0.1           2          (0,118)
+ clk                                                                                                                      io                   0                    0.1           2          (0,118)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                                                                          gbuf_block        0.16                   0.26           2          (1,118)
+ CLKBUF__0|I                                                                                                              gbuf             1.795                  2.055           2          (1,118)
+ CLKBUF__0|O                                                                                                              gbuf                 0                  2.055       10837          (1,118)
+ CLKBUF__0|clkout                                                                                                         gbuf_block           0                  2.055       10837          (1,118)
+ true_dual_port_ram/ram__15_8(11)__14_8(00)__13_8(11)__12_8(00)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_1(10)|WCLK    ram_4096x20          0                  2.055       10837          (85,2)
+
+---------- Path Details for Min Critical Paths (end) ---------------
