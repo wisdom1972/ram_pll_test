@@ -116,6 +116,8 @@ parameter ROM_AWIDTH = 3;
 
  - Jan-31-2020,  migrate from 2018.2 to 2019.2
  - Feb-1-2020,  migrate from 2019.2 to 2019.3, certified
+ - Feb-26-2020, add the ram_pll_FileList
+   这个设计采用文件列表来进行设计文件的工程导入，当HDL的设计文件数目非常多的时候，可以采用这种方法。 
 
   Efinity by Ben Chen
 
